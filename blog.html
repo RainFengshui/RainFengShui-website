@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>风水博客｜润泽天星风水</title>
+<meta property="og:title" content="风水博客｜润泽天星风水">
+<meta property="og:description" content="润泽先生撰写的风水实战文章：买房风水、办公室布局、种生基问答、墓地选择、八字解读。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rainfengshui.com/blog.html">
+<meta property="og:image" content="https://rainfengshui.com/baishi-1.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="风水博客｜润泽天星风水">
+<meta name="twitter:description" content="润泽先生撰写的风水实战文章：买房风水、办公室布局、种生基问答、墓地选择、八字解读。">
+<meta name="description" content="风水知识文章：买房风水十大注意事项、办公室风水布局、种生基问答、墓地风水选择、八字解读。润泽先生亲撰。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700;900&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070e;--bg2:#0d0d18;--gold:#c9a227;--gold-lt:#e8c766;--gold-dk:#8a6d1a;--ink:#ece5d3;--muted:#9a917e;--red:#a83232;--line:rgba(201,162,39,.28)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Serif SC',serif;line-height:1.9;overflow-x:hidden}
+#stars{position:fixed;inset:0;z-index:-2}
+.nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;transform:rotate(-4deg)}
+.brand-name{font-size:19px;letter-spacing:.35em;font-weight:600}
+.brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
+.nav-links{display:flex;gap:34px}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.25em}
+.nav-links a:hover,.nav-links a.cur{color:var(--gold-lt)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-lt);font-size:22px;padding:6px 14px;border-radius:4px;cursor:pointer;font-family:inherit}
+nav{position:fixed}
+@media(max-width:760px){
+  .menu-btn{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
+}
+.page-hero{padding:170px 6vw 70px;text-align:center}
+.page-hero .eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
+.page-hero h1{font-size:clamp(38px,6vw,64px);font-weight:900;letter-spacing:.15em;background:linear-gradient(175deg,#f7ecc8 20%,var(--gold-lt) 45%,var(--gold-dk) 75%,#f0d98a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+.page-hero p{color:var(--muted);letter-spacing:.2em;font-size:15px}
+section{padding:70px 6vw;max-width:1150px;margin:0 auto}
+.svc-row{display:grid;grid-template-columns:120px 1fr;gap:34px;align-items:start;border:1px solid var(--line);border-radius:6px;padding:44px 40px;margin-bottom:26px;background:linear-gradient(170deg,rgba(201,162,39,.05),transparent 60%),var(--bg2);transition:all .35s;text-decoration:none;color:var(--ink)}
+.svc-row:hover{border-color:var(--gold);transform:translateX(6px)}
+@media(max-width:640px){.svc-row{grid-template-columns:1fr;gap:14px}}
+.svc-row .glyph{font-size:52px;text-align:center;filter:sepia(.4) saturate(1.4)}
+.svc-row h3{font-size:21px;letter-spacing:.2em;color:var(--gold-lt);margin-bottom:12px}
+.svc-row h3 .tag{font-size:12px;border:1px solid var(--red);color:#e08a8a;border-radius:3px;padding:2px 10px;margin-left:12px;letter-spacing:.15em;vertical-align:middle}
+.svc-row p{color:var(--muted);font-size:14.5px;margin-bottom:10px}
+.svc-row ul{color:#fff;font-size:14px;list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:10px}
+.svc-row ul li::before{content:'✦ ';color:var(--gold-dk);font-size:11px}
+.svc-row .more{margin-top:14px;font-size:14px;color:#ffd700;font-weight:700;letter-spacing:.3em;text-decoration:underline;text-underline-offset:4px}
+.cta-box{text-align:center;border:1px solid var(--line);border-radius:8px;padding:70px 6vw;margin:30px auto;max-width:900px;background:radial-gradient(ellipse 70% 90% at 50% 110%,rgba(201,162,39,.14),transparent 70%),var(--bg2)}
+.btn{display:inline-block;padding:15px 46px;font-size:15px;letter-spacing:.35em;text-indent:.35em;text-decoration:none;border-radius:2px;font-family:'Noto Serif SC',serif;background:linear-gradient(160deg,var(--gold-lt),var(--gold) 60%,var(--gold-dk));color:#1a1405;font-weight:700;margin-top:26px}
+footer{border-top:1px solid var(--line);padding:44px 6vw;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:60px}
+footer .fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+.rv.on{opacity:1;transform:none}
+a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
+
+.slideshow{position:relative;max-width:600px;margin:0 auto;overflow:hidden;border-radius:12px;border:1px solid rgba(201,162,75,.25);aspect-ratio:4/3}
+.slides{position:relative;width:100%;height:100%}
+.slide{position:absolute;inset:0;opacity:0;animation:slideFade 24s infinite}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
+.slide .cap{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.65);color:#e8c86a;text-align:center;padding:8px;font-size:14px;letter-spacing:.1em}
+.slide:nth-child(1){animation-delay:0s}
+.slide:nth-child(2){animation-delay:4s}
+.slide:nth-child(3){animation-delay:8s}
+.slide:nth-child(4){animation-delay:12s}
+.slide:nth-child(5){animation-delay:16s}
+.slide:nth-child(6){animation-delay:20s}
+@keyframes slideFade{0%{opacity:0}2%{opacity:1}14%{opacity:1}16.66%{opacity:0}100%{opacity:0}}
+
+.lang-sw{border:1px solid var(--gold);border-radius:4px;padding:4px 10px!important;color:var(--gold)!important;font-size:12px!important}
+.lang-sw:hover{background:var(--gold);color:#0a0a0a!important}
+
+/* 喜用色增强：红色点缀 */
+.btn-primary{background:linear-gradient(160deg,#c0392b,#a93226 60%,#7b241c)!important;color:#fff!important}
+.accent-red{color:#e74c3c!important}
+.hr-red{border:none;height:2px;background:linear-gradient(90deg,transparent,#c0392b,transparent);margin:30px auto;max-width:300px}
+h2 .tick{color:#e74c3c!important}
+.cta-box{border-color:rgba(192,57,43,.4)!important}
+
+
+/* 红色主按钮 - 喜用色 */
+.btn,.btn-gold{background:linear-gradient(160deg,#d64533,#b93224 60%,#8e2318)!important;color:#fff!important;border:none!important;box-shadow:0 4px 20px rgba(214,69,51,.35)!important}
+.btn:hover,.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(214,69,51,.55)!important}
+
+
+.cat-section{margin-bottom:60px}
+.cat-title{font-size:26px;color:var(--gold-lt);letter-spacing:.15em;margin-bottom:30px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.cat-title .tick{color:#e74c3c;margin-right:10px}
+.cat-title .count{font-size:14px;color:var(--muted);margin-left:12px;letter-spacing:.1em}
+
+.fnav{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:24px}
+.fnav a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.2em}
+.fnav a:hover{color:var(--gold-lt)}
+.guarantee{color:#c0392b;font-weight:700}</style>
+</head>
+<body>
+<canvas id="stars"></canvas><div class="nebula"></div>
+<nav>
+  <a class="brand" href="index.html"><span class="seal">潤澤</span><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
+  <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="菜单">☰</button>
+  <div class="nav-links"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html" class="cur">博客</a><a href="faq.html">问答</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a><a href="en-blog.html" class="lang-sw">EN</a></div>
+</nav>
+<div class="page-hero">
+  <div class="eyebrow rv">風水博客</div>
+  <h1 class="rv">风水博客 · 实战文章</h1>
+  <p class="rv">润泽先生亲撰 · 干货分享</p>
+</div>
+<section>
+                                                          <div class="cat-section">
+    <h2 class="cat-title"><span class="tick">✦</span>企业经营痛点 <span class="count">14篇</span></h2>
+        <a class="svc-row rv" href="blog-fengshui-economics-2026-10-06.html"><div class="glyph">经</div><div><h3>风水背后的经济学：小钱办大事，不调风水的代价有多大</h3><p>看风水花的是小钱，调对了赚的是大钱，不调亏的是巨款。给企业主、富豪、普通家庭算一笔账：投入产出比的经济学。</p><div class="more">阅读全文 →</div></div></a>
+        <a class="svc-row rv" href="blog-shengji-benefits-2026-10-06.html"><div class="glyph">生</div><div><h3>种生基的六大好处：为什么港澳台富豪明星都在做</h3><p>种生基六大好处详解：规避家族阻扰、自己是直接受益人、子孙后代受益、目标小不易被破坏、不受地域限制、操作相对简单。赌王何鸿燊晚年病危后种生基延寿十几年。效果保证·无效退款，种生基十年保证期。</p><div class="more">阅读全文 →</div></div></a>
+        <a class="svc-row rv" href="blog-pain-101.html"><div class="glyph">订</div><div><h3>订单越来越少？可能是你的办公室风水在漏财</h3><p>企业订单下滑、生意难做？别只怪市场，看看你的办公室风水。财位被压、大门纳煞、老板坐向错误——三个漏财坑，润泽先生教你堵住。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-102.html"><div class="glyph">官</div><div><h3>官司一个接一个？可能是你办公室的官非煞气没化解</h3><p>企业官司不断、纠纷缠身？除了请律师，更要看看办公室风水。白虎位、官非煞、尖角冲射——三个惹官司的坑，润泽先生教你化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-103.html"><div class="glyph">核</div><div><h3>核心人才总留不住？问题可能出在你办公室的留人风水</h3><p>核心员工一个接一个跳槽？涨工资也留不住？可能是办公室风水在赶人。文昌位、靠山位、明堂——三个留人关键，润泽先生教你布留人局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-104.html"><div class="glyph">投</div><div><h3>投资总是亏？你的决策位可能坐错了地方</h3><p>投资一个亏一个，决策总失误？别只怪眼光，看看你的决策位风水。老板位、决策方位、气场——三个影响判断力的坑，润泽先生教你调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-105.html"><div class="glyph">现</div><div><h3>现金流快断了？催财布局可能是你的救命稻草</h3><p>企业现金流紧张、回款慢、入不敷出？可能是财路被堵住了。财位、收银位、水路——三个堵财路的坑，润泽先生教你布催财局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-106.html"><div class="glyph">合</div><div><h3>合伙人反目成仇？和气生财局先把"气"调顺了</h3><p>合伙人从兄弟变仇人，公司内耗严重？除了谈判，更要看看风水。和气位、是非星、座位相冲——三个伤和气的坑，润泽先生教你布和气生财局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-107.html"><div class="glyph">厂</div><div><h3>厂房选址错了？搬进去之前先做一次风水评估</h3><p>厂房选址失误，搬进去就倒霉？选址之前先做风水评估。地势、水路、煞气——三个选址大坑，润泽先生教你避开。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-108.html"><div class="glyph">办</div><div><h3>办公室布局一团乱？老板位调对了，公司就顺了</h3><p>办公室布局混乱，气场杂乱？先把老板位调对。坐向、靠山、视野——三个老板位大坑，润泽先生教你调整。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-109.html"><div class="glyph">开</div><div><h3>开业日子没选对？好日子是企业成功的第一步</h3><p>开业日子随便选的？开业择吉决定企业起点运势。冲煞、空亡、凶日——三个择日大坑，润泽先生教你选开业吉日。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-110.html"><div class="glyph">品</div><div><h3>品牌名起得不利？好名字是企业最好的风水</h3><p>品牌名不利企业发展？企业起名改名有讲究。五行相克、数理凶、寓意差——三个起名大坑，润泽先生教你起旺财名。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-111.html"><div class="glyph">经</div><div><h3>经销商不听话？震位调理让渠道服服帖帖</h3><p>经销商不听指挥、窜货、压价？除了管理手段，更要看看震位风水。震位、号令位、气场——三个管渠道的坑，润泽先生教你调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-112.html"><div class="glyph">应</div><div><h3>应收账款收不回？催债奇门帮你把钱要回来</h3><p>应收账款收不回，坏账越积越多？法术奇门有专门的催债之法。催债方位、时机、方法——三个要账关键，润泽先生教你布催债局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-113.html"><div class="glyph">竞</div><div><h3>竞争对手恶意打压？化小人局让你稳如泰山</h3><p>竞争对手恶意挖人、造谣、打价格战？除了硬扛，更要化小人。白虎位、小人煞、气场——三个防小人的坑，润泽先生教你布化小人局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-114.html"><div class="glyph">产</div><div><h3>产品滞销压仓库？仓库风水可能是病根</h3><p>产品滞销、库存积压、仓库越堆越多？看看仓库风水。财库位、气流、煞气——三个仓库大坑，润泽先生教你调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-115.html"><div class="glyph">盲</div><div><h3>盲目扩张栽了跟头？战略咨询先看天时地利</h3><p>盲目扩张导致资金链断裂、分店亏损？扩张前先做战略风水咨询。时机、选址、布局——三个扩张大坑，润泽先生教你避开。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-116.html"><div class="glyph">融</div><div><h3>融资总被拒？贵人位激活让投资人主动找你</h3><p>融资屡屡被拒，投资人不见你？可能是贵人位出了问题。贵人位、办公室气场、老板状态——三个融资关键，润泽先生教你激活。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-117.html"><div class="glyph">税</div><div><h3>税务问题不断？先化解办公室的口舌是非</h3><p>税务稽查、罚款、举报不断？除了合规，更要化口舌是非。三碧是非星、白虎位、大门——三个招是非的坑，润泽先生教你化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-118.html"><div class="glyph">员</div><div><h3>员工士气低落死气沉沉？把明堂打开，气就顺了</h3><p>员工士气低落、死气沉沉、混日子？别只怪管理，看看明堂风水。明堂、光线、气流——三个影响士气的坑，润泽先生教你调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-119.html"><div class="glyph">客</div><div><h3>客户投诉越来越多？前台风水可能是第一张脸没做好</h3><p>客户投诉多、满意度下降、口碑变差？看看前台风水。前台位置、形象、气场——三个丢客户的坑，润泽先生教你调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-120.html"><div class="glyph">供</div><div><h3>供应链说断就断？靠山位加强让后方稳如磐石</h3><p>供应商涨价、断货、跑路，供应链不稳定？看看靠山位风水。靠山位、后方气场、贵人——三个稳供应链的坑，润泽先生教你加强。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-121.html"><div class="glyph">租</div><div><h3>租金贵得肉疼？搬迁选址一次到位，越搬越旺</h3><p>办公室租金太贵想搬迁？搬迁选址有讲究。地段、朝向、气场——三个搬迁大坑，润泽先生教你一次选到位。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-122.html"><div class="glyph">谈</div><div><h3>谈判总谈崩？谈判位布局让你气场压人一头</h3><p>重要谈判总失败，大单谈崩？看看谈判位风水。座位、朝向、气场——三个谈判大坑，润泽先生教你布局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-123.html"><div class="glyph">会</div><div><h3>会议室里总做错决定？会议室风水可能是病根</h3><p>公司重大决策总失误？看看会议室风水。方位、座位、气场——三个影响决策的坑，润泽先生教你调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-124.html"><div class="glyph">财</div><div><h3>财务室天天漏财？布局调对了，钱才守得住</h3><p>企业赚钱却存不住，财务漏洞多？看看财务室风水。位置、保险柜、气场——三个漏财大坑，润泽先生教你布局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-125.html"><div class="glyph">公</div><div><h3>公司大门天天纳煞？化解了，气运就顺了</h3><p>公司诸事不顺、是非不断？看看大门风水。大门是纳气口，纳煞则衰。路冲、尖角、电梯——三个大门煞，润泽先生教你化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-126.html"><div class="glyph">财</div><div><h3>财富越积越多却越守不住？你的财库可能漏了</h3><p>赚得多漏得更多，财富总守不住？财库破损、财位犯煞、穿堂风漏财——三个守财大坑，润泽先生教你布守财风水局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-127.html"><div class="glyph">家</div><div><h3>家业传到第三代就散了？家族风水的传承密码</h3><p>担心家业传不下去、富不过三代？传承规划不只是钱和信托，更是家族气运。祖坟、阳宅、气运——三个传承大坑，润泽先生教你家族风水传承。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-128.html"><div class="glyph">钱</div><div><h3>钱再多也换不来健康？你住的房子可能在耗你的命</h3><p>身体总出问题，医院跑遍了查不出毛病？可能是房子在耗你的健康。病符位、厕压吉位、阴气重——三个健康大坑，润泽先生教你健康风水调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-129.html"><div class="glyph">孩</div><div><h3>孩子不爱读书沉迷手机？文昌位可能被压住了</h3><p>子女不争气，不爱读书沉迷手机？别只怪孩子，看看文昌位。文昌被压、书桌错位、卧室气场乱——三个文昌大坑，润泽先生教你布文昌局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-130.html"><div class="glyph">夫</div><div><h3>夫妻总吵架感情变淡？卧室风水可能出了问题</h3><p>婚姻出问题，夫妻总吵架感情变淡？别只怪性格，看看卧室风水。桃花煞、床位大忌、气场燥——三个婚姻大坑，润泽先生教你夫妻位调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-131.html"><div class="glyph">官</div><div><h3>官司不断麻烦缠身？白虎煞可能在作怪</h3><p>官非缠身，官司一个接一个？可能是白虎煞在作怪。白虎位动、大门犯煞、流年叠加——三个官非大坑，润泽先生教你化解官非。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-132.html"><div class="glyph">投</div><div><h3>投资总踩坑被人骗钱？破财格局要防</h3><p>投资总踩坑、被人设局骗钱？可能是破财格局在作怪。破财屋、决策位犯煞、小人运旺——三个破财大坑，润泽先生教你布防破财局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-133.html"><div class="glyph">整</div><div><h3>整夜失眠越睡越累？卧室气场可能乱了</h3><p>睡眠质量差，整夜失眠多梦？安眠药越吃越多？可能是卧室风水出了问题。床位大忌、光煞气流乱、电器煞——三个失眠大坑，润泽先生教你调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-134.html"><div class="glyph">意</div><div><h3>意外车祸血光不断？煞气可能盯上你了</h3><p>意外灾祸多，车祸摔伤手术不断？可能是煞气缠身。路冲尖角煞、白虎开口、祖坟犯煞——三个灾祸大坑，润泽先生教你化煞保平安。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-135.html"><div class="glyph">做</div><div><h3>做什么都不顺运势跌到谷底？该转运了</h3><p>运势持续低迷，做什么都不顺？别干等，风水是改运最实在的手段。大运交接、住宅衰运、气场弱——三个低迷大坑，润泽先生教你转运布局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-136.html"><div class="glyph">关</div><div><h3>关键时刻总没人帮你？贵人位可能空了</h3><p>贵人运差，关键时刻没人拉一把？可能是贵人位出了问题。贵人位被压、大门纳气差、客厅无主位——三个贵人大坑，润泽先生教你激活贵人位。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-137.html"><div class="glyph">烂</div><div><h3>烂桃花缠身家宅不宁？桃花煞要斩</h3><p>烂桃花不断，纠缠不清家宅不宁？可能是桃花煞在作怪。桃花位犯煞、卧室桃花过旺、流年桃花劫——三个桃花大坑，润泽先生教你斩桃花。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-138.html"><div class="glyph">孩</div><div><h3>孩子叛逆顶撞父母？子女宫气场要调</h3><p>子女叛逆，顶撞父母逃学沉迷？打骂越管越反？可能是子女宫气场出了问题。卧室犯煞、文昌子女宫双乱、家宅火气旺——三个叛逆大坑，润泽先生教你调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-139.html"><div class="glyph">父</div><div><h3>父母身体越来越差？家里的寿位可能有问题</h3><p>老人健康差，药越吃越多？可能是家里寿位出了问题。老人房位置差、寿位被压、房间阴冷——三个寿位大坑，润泽先生教你寿位调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-140.html"><div class="glyph">兄</div><div><h3>兄弟反目家无宁日？宅气不和要调</h3><p>家族不和睦，兄弟反目妯娌不和？可能是宅气出了问题。中宫受冲、房位相克、家宅无主心骨——三个不和大坑，润泽先生教你布和气局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-141.html"><div class="glyph">遗</div><div><h3>遗产争夺兄弟反目？先看看祖坟风水</h3><p>遗产纠纷，兄弟为争家产反目？打官司之前先看看祖坟风水。祖坟失修、分金差一线、水口出问题——三个纠纷大坑，润泽先生教你从根上化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-142.html"><div class="glyph">豪</div><div><h3>豪宅越住越不顺越住越穷？大宅最怕格局错</h3><p>豪宅越住越不顺，生意下滑身体变差？大宅最怕格局错。聚不住气、格局犯大忌、装修煞重——三个豪宅大坑，润泽先生教你豪宅风水诊断。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-143.html"><div class="glyph">书</div><div><h3>书房坐半天没灵感决策总失误？文昌位被堵了</h3><p>书房没灵感，重要决策总失误？可能是文昌位被堵了。文昌位错、书桌背门、光煞杂物乱——三个书房大坑，润泽先生教你调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-144.html"><div class="glyph">搬</div><div><h3>搬进主卧后身体越来越差？床位可能犯了大忌</h3><p>搬进主卧后身体越来越差？换个房间就好转？可能是床位犯了大忌。病符位、潮湿阴煞、床头大忌——三个卧室大坑，润泽先生教你卧室调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-145.html"><div class="glyph">保</div><div><h3>保险箱放错一个位置，等于把财神往外推</h3><p>保险箱放错位置，财物无故损失、投资被骗？可能是财库位错了。放凶位、见光见水、对大门——三个财库大坑，润泽先生教你财库位安放。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-146.html"><div class="glyph">后</div><div><h3>后代一代不如一代？祖坟可能出了问题</h3><p>后代一代不如一代，家族运势走下坡？可能是祖坟出了问题。祖坟破败、来龙受损、分金差一线——三个阴宅大坑，润泽先生教你阴宅调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-147.html"><div class="glyph">气</div><div><h3>气场弱镇不住场面？种生基借地气改运</h3><p>个人气场弱，镇不住场面、抓不住机会？种生基向大地借能量。先天能量不足、长期耗泄、大运未到——三个气场大坑，润泽先生教你种生基改运。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-148.html"><div class="glyph">名</div><div><h3>名字起错了运势被压半辈子？改名要趁早</h3><p>想改名转运？名字起错了，运势被压半辈子。五行克命、寓意差、改名不择吉——三个姓名大坑，润泽先生教你专业起名改名。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-149.html"><div class="glyph">大</div><div><h3>大事总选错日子功亏一篑？好日子是选出来的</h3><p>重要事情总选错日子，功亏一篑？好日子是选出来的。大事不择日、只看黄历不看八字、吉时错过——三个择日大坑，润泽先生教你专业择吉。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-150.html"><div class="glyph">本</div><div><h3>本命年诸事不顺？太岁要化，布局要做</h3><p>本命年不顺，工作身体家里全出问题？太岁要化，布局要做。硬扛不化解、太岁位动土、只拜不调——三个太岁大坑，润泽先生教你化太岁布局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-151.html"><div class="glyph">买</div><div><h3>买房选错楼层，住得越久越倒霉？</h3><p>买房选楼层不是看数字吉利。楼层有五行，和命主五行相克，住久了运势下滑、身体出毛病。润泽先生教你按命选楼层。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-152.html"><div class="glyph">房</div><div><h3>房子缺角，缺哪一角就伤哪一位家人？</h3><p>户型缺角不是小毛病。缺西北伤男主人，缺西南伤女主人，缺角的房子聚不住气。润泽先生讲缺角化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-153.html"><div class="glyph">大</div><div><h3>大门朝向错了，整套房的运都错了？</h3><p>大门朝向不能只看方位吉凶，要看门外的山、水、路、树、塔、高楼。峦头形煞才是根本。润泽先生讲大门风水。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-154.html"><div class="glyph">客</div><div><h3>客厅越住越乱？那是你家气场乱了</h3><p>客厅是家的心脏。沙发无靠、财位堆杂物、布局混乱，家运跟着乱。润泽先生讲客厅风水布局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-155.html"><div class="glyph">主</div><div><h3>主卧选错位置，夫妻感情越住越淡？</h3><p>主卧位置决定夫妻感情和家运。卧室在凶位、门对大门、床头无靠，越住问题越多。润泽先生讲卧室选位。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-156.html"><div class="glyph">厨</div><div><h3>厨房位置错了，全家人的健康买单？</h3><p>厨房是家里的养命之源。厨房压西北、水火对冲、落在凶位，全家健康受影响。润泽先生讲厨房风水。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-157.html"><div class="glyph">卫</div><div><h3>卫生间压中宫，这套房住不得？</h3><p>卫生间在房屋正中心叫压中宫，秽气散布全屋，是最凶的户型硬伤之一。润泽先生讲卫生间化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-158.html"><div class="glyph">阳</div><div><h3>阳台只用来晒衣服？你错过了一个聚宝盆</h3><p>阳台是房子的纳气口。堆满杂物、对着尖角煞，等于把聚宝盆当垃圾场。润泽先生讲阳台布局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-159.html"><div class="glyph">装</div><div><h3>装修没择日，动土动了太岁？</h3><p>装修动土是大事。没择日就砸墙开工，冲了太岁、犯了五黄，装完入住诸事不顺。润泽先生讲装修择吉。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-160.html"><div class="glyph">搬</div><div><h3>搬家日子随便选？新房第一天气场就定了</h3><p>搬家入宅的日子决定新房的起点气场。日子随便选、冲了家主，不净宅不安床，住进去问题不断。润泽先生讲搬家择吉。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-161.html"><div class="glyph">邻</div><div><h3>邻居总找茬？可能是你家犯了小人煞</h3><p>邻居天天找茬、物业刁难，不一定是人的问题，可能是你家犯了小人煞、门对门惹是非。润泽先生讲化解邻里是非。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-162.html"><div class="glyph">花</div><div><h3>花大钱买学区房，孩子成绩还是上不去？</h3><p>学区房买了，孩子成绩还是上不去？书桌背门、文昌位堆杂物，文昌运被堵死了。润泽先生讲文昌布局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-163.html"><div class="glyph">家</div><div><h3>家里又暗又闷？光进不来，财也进不来</h3><p>家里采光差、又暗又闷，不只是居住不舒服，是明堂无光、财气进不来。润泽先生讲明堂调理。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-164.html"><div class="glyph">横</div><div><h3>横梁压顶，睡在下面的人最倒霉</h3><p>横梁压床、压沙发、压书桌，气场被横梁切断，睡在下面的人健康运势都受影响。润泽先生讲横梁化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-165.html"><div class="glyph">大</div><div><h3>大门对阳台？财从你家穿堂而过</h3><p>大门直通阳台、后门，财气穿堂而过留不住，这叫穿堂煞，是漏财最凶的格局之一。润泽先生讲穿堂煞化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-166.html"><div class="glyph">一</div><div><h3>一开门就看见灶？财库外露要破财</h3><p>开门见灶，财库外露，是破财的格局。厨房门对大门、灶台一眼可见，钱财守不住。润泽先生讲玄关化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-167.html"><div class="glyph">卧</div><div><h3>卧室门对门，家里口舌是非不断？</h3><p>卧室门对卧室门、卧室门对卫生间门，门冲惹口舌是非，家人关系紧张。润泽先生讲门冲化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-168.html"><div class="glyph">镜</div><div><h3>镜子摆错了，半夜照出'不干净的东西'？</h3><p>镜子对床、对大门、对灶，阴气重、破财伤身。镜子是风水里最容易摆错的东西。润泽先生讲镜子风水。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-169.html"><div class="glyph">家</div><div><h3>家里植物放错了，越养越阴？</h3><p>植物不是越多越好。枯植物不扔、带刺植物放卧室、植物太多太阴，反而招阴气。润泽先生讲植物摆放。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-170.html"><div class="glyph">鱼</div><div><h3>鱼缸放错位置，养的不是鱼是煞？</h3><p>鱼缸催财人人都知道，但放错位置、鱼总死、缸太大，反而破财伤身。润泽先生讲鱼缸催财的正确摆法。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-171.html"><div class="glyph">玄</div><div><h3>玄关设计错了，好运进不了门</h3><p>玄关是房子的咽喉。没玄关直冲、玄关堆杂物、灯不亮，好运被挡在门外。润泽先生讲玄关纳气。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-172.html"><div class="glyph">楼</div><div><h3>楼梯位置错了，家运一步步往下走？</h3><p>复式、别墅的楼梯位置大有讲究。楼梯对大门、楼梯在正中，家运一步步往下走。润泽先生讲楼梯风水。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-173.html"><div class="glyph">车</div><div><h3>车库压错了方位，家运被车'碾'没了？</h3><p>美国人家家有车库。车库压吉位、车库门对大门，家运被'碾'没了。润泽先生讲车库风水。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-174.html"><div class="glyph">小</div><div><h3>小区环境差，买房时没看外面？</h3><p>买房只看户型不看小区环境？高压塔、坟场、路冲、反弓水，峦头不好，户型再好也白搭。润泽先生讲峦头化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-175.html"><div class="glyph">物</div><div><h3>物业纠纷不断？家里需要布个和气局</h3><p>物业纠纷、邻里矛盾、家里口舌不断？光讲道理没用，气场不对，是非不断。润泽先生讲和气局。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-176.html"><div class="glyph">结</div><div><h3>结婚日子随便选？小心婚后矛盾不断</h3><p>结婚日子怎么选？日子没选好，婚后矛盾不断、婆媳不和。润泽先生讲结婚择吉的讲究：避开冲煞、合双方八字，好日子是婚姻的第一道保险。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-177.html"><div class="glyph">婚</div><div><h3>婚后感情越来越淡？可能是婚房风水出了问题</h3><p>婚后感情变淡、争吵不断？别急着怪对方，先看看婚房风水。床头、镜子、婚纱照位置——三个感情杀手，润泽先生教你化解。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-178.html"><div class="glyph">备</div><div><h3>备孕一年怀不上？别只怪身体，先看风水</h3><p>备孕总怀不上，检查都正常？别只怪身体，可能是家里风水挡了送子路。卧室、床位、求子方位——三个求子坑，润泽先生教你打通。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-179.html"><div class="glyph">剖</div><div><h3>剖腹产日子随便定？宝宝的第一张考卷别乱交</h3><p>剖腹产要择日吗？宝宝的八字就是人生的第一张考卷，日子选好赢在起跑线。润泽先生讲剖腹产择日的讲究：避开凶时，选出富贵好八字。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-180.html"><div class="glyph">能</div><div><h3>能力不差却总升不上去？可能是官运被压住了</h3><p>升迁总轮不到你？能力不差、资历够了，就是上不去。别只怪领导，可能是你的官运被压住了。润泽先生讲官运布局：办公室、住宅双管齐下。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-181.html"><div class="glyph">孩</div><div><h3>孩子明明很努力，考试总差一口气？</h3><p>孩子学习努力，考试运就是差？别只怪孩子，可能是文昌位没催旺。书房、书桌、文昌塔——三个考试坑，润泽先生讲文昌催旺的门道。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-182.html"><div class="glyph">创</div><div><h3>创业失败三次？可能不是你不行，是时机错了</h3><p>创业屡战屡败？别急着否定自己，可能是时机没选对。开业择吉、流年配合——三个创业时机坑，润泽先生教你选对起跑时间。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-183.html"><div class="glyph">跳</div><div><h3>跳槽越跳越差？转折点选错了</h3><p>跳槽一次不如一次？别只怪公司，可能是你转折的时机和方向错了。润泽先生讲职业转折咨询：看流年、看方向，跳槽跳对地方。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-184.html"><div class="glyph">留</div><div><h3>留学花了几十万，学校选错了？</h3><p>留学选校只看排名？孩子八字合不合学校、合不合城市，差别大了去了。润泽先生讲文昌择校：选对学校和城市，留学才不白花钱。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-185.html"><div class="glyph">新</div><div><h3>新车买来就出事？提车日子可能没选对</h3><p>新车提回来就剐蹭、故障不断？别只怪运气差，可能是提车日子没选对。润泽先生讲提车择吉：避开冲煞，选个一路平安的好日子。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-186.html"><div class="glyph">开</div><div><h3>开业当天就出状况？日子可能冲了你的八字</h3><p>开业当天状况百出、之后生意惨淡？很可能是开业日子冲了老板的八字。润泽先生讲开业择吉：好日子开张，生意才能长红。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-187.html"><div class="glyph">动</div><div><h3>动土没择日？小心动了太岁头上的土</h3><p>装修动土、盖房破土没择日？动土犯煞，家里人跟着遭殃。润泽先生讲动土择吉：避开太岁三煞，动土平安、家宅安宁。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-188.html"><div class="glyph">安</div><div><h3>安葬日子选错？后人运势跟着受影响</h3><p>安葬日子随便定？日子选错，先人不安，后人运势跟着受影响。润泽先生讲安葬择吉：让先人入土为安，福荫子孙后代。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-189.html"><div class="glyph">搬</div><div><h3>搬家后诸事不顺？可能是冲了太岁</h3><p>搬家后倒霉事不断？很可能是搬家日子冲了太岁、冲了自己。润泽先生讲搬家择吉：选对日子入宅，人旺财旺运气旺。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-190.html"><div class="glyph">合</div><div><h3>合同总在签字前黄了？签约也要看日子</h3><p>大合同总在签字前谈崩？别只怪对方变卦，可能是签约的日子没选对。润泽先生讲签约择吉：好日子落笔，合同才能顺利落地。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-191.html"><div class="glyph">谈</div><div><h3>谈判老是谈崩？可能是你选错了时间</h3><p>重要谈判总谈崩？别只怪对方难搞，可能是你选错了时间。润泽先生讲奇门择时：选对时辰出手，谈判桌上占尽先机。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-192.html"><div class="glyph">打</div><div><h3>打官司总输？开庭日子可能对你不利</h3><p>官司明明有理却总输？别只怪律师，可能是开庭的日子对你不利。润泽先生讲诉讼择吉：好日子开庭，官司胜算大增。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-193.html"><div class="glyph">看</div><div><h3>看病总看不好？求医也要择吉</h3><p>病看了很久总不见好？别只怪医生，可能是求医的时机没选对。润泽先生讲求医择吉：好日子看病，药到病除更快。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-194.html"><div class="glyph">出</div><div><h3>出门总遇到意外？出行前先看日子</h3><p>出差旅行总遇到意外？航班延误、丢东西、生病，可能是出行日子没选对。润泽先生讲出行择吉：好日子出门，一路顺风。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-195.html"><div class="glyph">面</div><div><h3>面试十次挂十次？问题可能不在简历</h3><p>面试总被刷？简历不错、能力不差，就是过不了面试。别只怪运气，可能是你的面试风水出了问题。润泽先生教你面试前的讲究。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-196.html"><div class="glyph">相</div><div><h3>相亲几十次都不成？可能是桃花位被堵了</h3><p>相亲几十次都不成？别只怪缘分没到，可能是你家的桃花位被堵死了。润泽先生讲桃花位调理：打通桃花路，好姻缘自然来。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-197.html"><div class="glyph">求</div><div><h3>求子心切却无果？送子布局了解一下</h3><p>求子心切，方法试遍就是怀不上？别灰心，送子布局了解一下。润泽先生讲催丁布局：从八字到风水，全方位打通求子路。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-198.html"><div class="glyph">大</div><div><h3>大病初愈总反复？家里的风水可能拖了后腿</h3><p>大病初愈，身体总不见好、还反复？别只怪体质差，可能是家里风水拖了后腿。润泽先生讲健康风水：好气场，是最好的康复药。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-199.html"><div class="glyph">想</div><div><h3>想转运却不知时机？流年运势先看懂</h3><p>想转运，却不知道时机在哪？流年运势看不懂，努力全白费。润泽先生讲流年分析：看懂你的运势曲线，在对的时间做对的事。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-pain-200.html"><div class="glyph">本</div><div><h3>本命年事事不顺？太岁不是拜拜就完事</h3><p>本命年犯太岁，事事不顺？拜了太岁还是倒霉？太岁化解不是拜拜就完事。润泽先生讲太岁化解的正法：从根上解决问题。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-wujian-2026-10-05.html"><div class="glyph">阵</div><div><h3>摆个物件就能发财？奇门阵法实例</h3><p>物件是能量开关，摆对了催财催贵，摆错了变煞气。奇门空亡化解阵：物件、时间、方位三者缺一不可。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-mixin-2026-10-05.html"><div class="glyph">破</div><div><h3>风水是迷信吗？用实效说话</h3><p>风水是环境对人的作用规律，信不信都起作用。契约风水，先有效果后收钱。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-yiming.html"><div class="glyph">命</div><div><h3>一命二运三风水：命改不了，但风水可以改</h3><p>命和运出生已定很难改，唯有风水可调可选可改，作用大于积德行善读书拿学历。</p><div class="more">阅读全文 →</div></div></a>
+<a class="svc-row rv" href="blog-dingdan.html"><div class="glyph">订</div><div><h3>订单下滑、客户流失？办公室风水漏财局</h3><p>订单越来越少？可能是办公室在漏财。调风水$2/平方英尺，包效果三年。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-touzi.html"><div class="glyph">投</div><div><h3>投资总踩坑？奇门预测先看再投</h3><p>投一个亏一个？奇门预测$169/次，当场见分晓。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-tuopo.html"><div class="glyph">破</div><div><h3>财富遇到天花板？催财布局突破瓶颈</h3><p>赚到一定数就上不去？催财布局打破天花板。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-guiren.html"><div class="glyph">贵</div><div><h3>客户一直在流失？布催贵人局，把贵人请回来</h3><p>老客户流失、新客户难留？不是你服务不好，是贵人位出了问题。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-zhuizhai.html"><div class="glyph">债</div><div><h3>欠债不还？奇门追债布局，收到钱才付款</h3><p>客户欠钱不还，催讨无门？奇门追债布局，追回才收费，没追回一分不用出。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-guansi.html"><div class="glyph">司</div><div><h3>官司缠身？奇门布局助你打赢官司</h3><p>官司耗钱耗精力？奇门保赢官司布局，包效果二年，无效退款。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-xiaoren.html"><div class="glyph">人</div><div><h3>总被小人陷害？法事化解小人，一年见效</h3><p>被抢功劳、造谣诽谤？化解小人法事$3,000，包效果一年。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-yuangong.html"><div class="glyph">员</div><div><h3>核心员工留不住？风水+八字双管齐下</h3><p>好员工一个个离职？办公室风水+员工八字筛选，双管齐下。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-lirun.html"><div class="glyph">利</div><div><h3>忙一年白忙？财位没激活，赚的全漏了</h3><p>营收高利润低？财位三种死法，教你激活财位。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-xiangmu.html"><div class="glyph">项</div><div><h3>新项目总亏钱？选址第一步就错了</h3><p>新项目开一个亏一个？选址风水第一步就错了。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-zhuanda.html"><div class="glyph">策</div><div><h3>重大决策拿不准？先测一下再拍板</h3><p>几千万的决策，一次拍错全完蛋？奇门预测$169，当场见分晓。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-zhuanxing.html"><div class="glyph">转</div><div><h3>公司转型迷茫？先看看你的大运走到哪</h3><p>方向不明、时机难定？八字看清十年大运，顺大运者昌。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-gongchang-xuanzhi.html"><div class="glyph">厂</div><div><h3>工厂选址不能凭感觉，实地寻龙点穴才靠谱</h3><p>上亿投资，选址错了全完蛋？实地寻龙点穴，包效果三年。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-gongchang.html"><div class="glyph">工</div><div><h3>工厂选址的五个致命风水坑</h3><p>投资建厂，选址错了几千万打水漂。五个致命坑，避开就是赚到。</p><div class="more">阅读全文 →</div></div></a>
+  </div>
+
+  <div class="cat-section">
+    <h2 class="cat-title"><span class="tick">✦</span>富豪个人痛点 <span class="count">8篇</span></h2>
+    <a class="svc-row rv" href="blog-baofu.html"><div class="glyph">保</div><div><h3>财富保值的终极密码：为什么顶级富豪都重视种生基</h3><p>钱越赚越多，但总感觉不踏实？富豪都在用的财富保险——种生基。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-shimian.html"><div class="glyph">眠</div><div><h3>有钱睡不着？失眠焦虑的风水真相</h3><p>有钱却睡不着？床头无靠、横梁压顶、阴气过重——三个风水煞，教你化解。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-hunyin.html"><div class="glyph">婚</div><div><h3>夫妻不和？保婚姻和合法事，一年见效</h3><p>富豪家庭的隐形危机。保婚姻和合法事$6,000，包效果一年。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-chuandai.html"><div class="glyph">传</div><div><h3>担心富不过三代？祖坟风水决定家族兴衰</h3><p>阴宅荫子孙。调阴宅风水$6,900，包效果三年。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-jiankang.html"><div class="glyph">健</div><div><h3>慢性病缠身？道医调理找病根</h3><p>多年慢性病，医院查不出原因？可能是灵性病，道医调理找病根。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-yiyu.html"><div class="glyph">郁</div><div><h3>抑郁症走不出来？可能是灵性病</h3><p>吃药没用，咨询没用？冤亲债主缠身，道医+法事双管齐下。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-qiuzhi.html"><div class="glyph">子</div><div><h3>求子多年不得？催丁布局圆你父母梦</h3><p>试管几次失败？子嗣宫受克，奇门催丁布局$20,000，包效果二年。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-wenchang.html"><div class="glyph">文</div><div><h3>孩子读书不好？布文昌局，催旺学业运</h3><p>补习班上了不少，成绩上不去？不是孩子笨，是文昌位没激活。</p><div class="more">阅读全文 →</div></div></a>
+  </div>
+
+  <div class="cat-section">
+    <h2 class="cat-title"><span class="tick">✦</span>置业安居 <span class="count">3篇</span></h2>
+    <a class="svc-row rv" href="blog-maifang.html"><div class="glyph">买</div><div><h3>买房前不看风水？几百万可能打水漂</h3><p>人生最大投资，错不起。买房前风水评估，避开硬伤户型。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-maibudiao.html"><div class="glyph">售</div><div><h3>房子卖不掉？奇门布局加速成交</h3><p>挂几个月卖不掉？奇门催售布局，成交价5%，卖掉才收款。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-banjia.html"><div class="glyph">搬</div><div><h3>搬家后诸事不顺？你的新家风水有问题</h3><p>搬家后工作不顺、身体出问题？调阳宅风水$2/平方英尺。</p><div class="more">阅读全文 →</div></div></a>
+  </div>
+
+  <div class="cat-section">
+    <h2 class="cat-title"><span class="tick">✦</span>风水知识 <span class="count">5篇</span></h2>
+    <a class="svc-row rv" href="blog-fengshuishi-2026-10-06.html"><div class="glyph">辨</div><div><h3>风水师都是骗钱的吗？五招教你辨真假</h3><p>只会为真技术真效果买单，不会为骗子买单。五招看穿真假风水师。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-zhunbuzhun-2026-10-06.html"><div class="glyph">准</div><div><h3>为什么有的风水师看得准、有的不准？</h3><p>门派和功力的差别：调理三要素，缺一不可。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-sanyuanze.html"><div class="glyph">则</div><div><h3>三原则：不信不看，心不诚不看，不给钱不看</h3><p>润泽先生的三条规矩，背后是二十年的江湖经验。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-chengye.html"><div class="glyph">成</div><div><h3>成也风水，败也风水</h3><p>从科学家到风水师：几百万美金的学费，换来的人生转折。</p><div class="more">阅读全文 →</div></div></a>
+    <a class="svc-row rv" href="blog-qiyezhu.html"><div class="glyph">企</div><div><h3>为什么顶级企业家都有御用风水师</h3><p>香港富豪的共同秘密：重大决策前，先问风水师。</p><div class="more">阅读全文 →</div></div></a>
+  </div>
+
+</section>
+<section><div class="cta-box rv"><h2 style="font-size:clamp(26px,4vw,36px);letter-spacing:.18em;margin-bottom:14px">想深入了解？</h2><p style="color:var(--muted)">文章看完有疑问？直接联系润泽先生。</p><a class="btn" href="contact.html">免费初步咨询</a></div></section>
+<footer>
+<div class="fnav"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html">博客</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a></div>
+<a href="index.html" style="text-decoration:none"><a href="index.html" style="text-decoration:none"><div class="fbrand">润泽天星风水</div></a></a>
+<div>RAIN FENGSHUI · <span class="guarantee">效果保证·无效退款</span></div>
+<div style="margin-top:10px">© 2026 rainfengshui.com</div>
+</footer>
+<script>
+const c=document.getElementById('stars'),x=c.getContext('2d');let W,H,stars=[];
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight;stars=Array.from({length:Math.min(360,W*H/4200)},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.4+.3,p:Math.random()*6.28,s:.4+Math.random()*1.2,g:Math.random()<.14}))}
+rs();addEventListener('resize',rs);
+(function loop(t){x.clearRect(0,0,W,H);for(const s of stars){const tw=.35+.65*Math.abs(Math.sin(t*.001*s.s+s.p));x.beginPath();x.arc(s.x,s.y,s.r,0,7);x.fillStyle=s.g?`rgba(232,199,102,${tw})`:`rgba(255,244,220,${tw*.85})`;x.fill()}requestAnimationFrame(loop)})(0);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
