@@ -189,5 +189,28 @@ rs();addEventListener('resize',rs);
 const io=new IntersectionObserver(e=>e.forEach(i=>i.isIntersecting&&i.target.classList.add('on')),{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
+
+<style>
+.logo-zoom-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;justify-content:center;align-items:center;cursor:pointer}
+.logo-zoom-modal.active{display:flex}
+.logo-zoom-modal img{max-width:85%;max-height:85%;animation:zoomin 0.3s ease}
+@keyframes zoomin{from{transform:scale(0.5);opacity:0}to{transform:scale(1);opacity:1}}
+.brand-logo{cursor:pointer}
+</style>
+<div class="logo-zoom-modal" id="logoZoomModal" onclick="this.classList.remove('active')">
+<img src="logo-v4.png" alt="润泽logo">
+</div>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var logos=document.querySelectorAll(".brand-logo");
+  var modal=document.getElementById("logoZoomModal");
+  logos.forEach(function(logo){
+    logo.addEventListener("click",function(e){
+      e.preventDefault();e.stopPropagation();
+      modal.classList.add("active");
+    });
+  });
+});
+</script>
 </body>
 </html>

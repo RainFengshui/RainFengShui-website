@@ -97,12 +97,12 @@ h2 .tick{color:#e74c3c!important}
 .fnav{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:24px}
 .fnav a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.2em}
 .fnav a:hover{color:var(--gold-lt)}
-.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color .2s}.wx-copy:hover{color:var(--gold-lt)}.fee-t{color:var(--gold-lt);font-weight:700;font-size:15.5px;letter-spacing:.14em;margin:26px 0 10px}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}</style>
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color .2s;white-space:nowrap}.wx-copy:hover{color:var(--gold-lt)}.fee-t{color:var(--gold-lt);font-weight:700;font-size:15.5px;letter-spacing:.14em;margin:26px 0 10px}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}</style>
 </head>
 <body>
 <canvas id="stars"></canvas><div class="nebula"></div>
 <nav>
-  <a class="brand" href="index.html"><img src="logo-v2.png" alt="润泽" class="brand-logo"><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
+  <a class="brand" href="index.html"><img src="logo-v4.png" alt="润泽" class="brand-logo"><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="菜单">☰</button>
   <div class="nav-links"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html">博客</a><a href="faq.html">问答</a><a href="about.html">关于</a><a href="pricing.html" class="cur">收费</a><a href="contact.html">预约</a><a href="en-svc-yangzhai-company-layout.html" class="lang-sw">EN</a></div>
 </nav>
@@ -132,7 +132,7 @@ h2 .tick{color:#e74c3c!important}
 <div class="dsec rv">
   <h2><span class="tick">✦</span>服务流程</h2>
   <ul>
-    <li><strong>预约咨询</strong>：说明项目类型与面积，提供图纸<br>✉️ <a href="mailto:RainFengShui@yahoo.com" style="color:var(--gold-lt);font-weight:600">RainFengShui@yahoo.com</a><br>💬 <span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span>（微信，点击复制）<br>📞 <a href="tel:6502480529" style="color:var(--gold-lt);font-weight:600">650-248-0529</a></li>
+    <li><strong>预约咨询</strong>：说明项目类型与面积，提供图纸<br>✉️ <a href="mailto:RainFengShui@yahoo.com" style="color:var(--gold-lt);font-weight:600">RainFengShui@yahoo.com</a><br>💬 <span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span>（微信，点击复制）<br>📞 <a href="tel:6502480529" style="color:var(--gold-lt);font-weight:600"><span style="white-space:nowrap">650-248-0529</span></a></li>
     <li><strong>首次上门实地察看</strong>：收取 设置费（同城 $500 / 远程 $1000，不可退），勘测场地现状</li>
     <li>确定大门与整体坐向，出具风水设计条件</li>
     <li><strong>配合设计/装修团队出图</strong>：功能分区与动线按风水要求落图</li>
@@ -159,8 +159,8 @@ h2 .tick{color:#e74c3c!important}
 <div class="dsec rv">
   <h2><span class="tick">✦</span>联系方式</h2>
   <p>邮箱：<a href="mailto:RainFengShui@yahoo.com" style="color:var(--gold-lt);font-weight:600">RainFengShui@yahoo.com</a></p>
-  <p>微信号：<strong><span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span></strong></p>
-  <p>电话：<a href="tel:6502480529" style="color:var(--gold-lt);font-weight:600">650-248-0529</a></p>
+  <p style="text-align:left">微信号：<strong><span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span></strong></p>
+  <p>电话：<a href="tel:6502480529" style="color:var(--gold-lt);font-weight:600"><span style="white-space:nowrap">650-248-0529</span></a></p>
 </div>
 </section>
 <section><div class="cta-box rv"><h2 style="font-size:clamp(26px,4vw,36px);letter-spacing:.18em;margin-bottom:14px">预约咨询</h2><a class="btn" href="contact.html">立即预约</a></div>
@@ -181,5 +181,28 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
 <script>
 function copyWechat(el){var t=el.getAttribute('data-copy');function done(){var s=el.textContent;el.textContent=t+' ✓已复制';el.style.color='#e8c766';setTimeout(function(){el.textContent=s;el.style.color=''},1500)}if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done).catch(function(){fallback()})}else{fallback()}function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,99999);try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(ta)}}
-</script></body>
+</script>
+<style>
+.logo-zoom-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;justify-content:center;align-items:center;cursor:pointer}
+.logo-zoom-modal.active{display:flex}
+.logo-zoom-modal img{max-width:85%;max-height:85%;animation:zoomin 0.3s ease}
+@keyframes zoomin{from{transform:scale(0.5);opacity:0}to{transform:scale(1);opacity:1}}
+.brand-logo{cursor:pointer}
+</style>
+<div class="logo-zoom-modal" id="logoZoomModal" onclick="this.classList.remove('active')">
+<img src="logo-v4.png" alt="润泽logo">
+</div>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var logos=document.querySelectorAll(".brand-logo");
+  var modal=document.getElementById("logoZoomModal");
+  logos.forEach(function(logo){
+    logo.addEventListener("click",function(e){
+      e.preventDefault();e.stopPropagation();
+      modal.classList.add("active");
+    });
+  });
+});
+</script>
+</body>
 </html>

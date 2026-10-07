@@ -66,12 +66,12 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 .svc-link:hover{color:var(--gold-lt)}
 .setup-note{background:rgba(214,69,51,.08);border:1px solid rgba(214,69,51,.3);border-radius:6px;padding:14px 20px;margin:16px 0;font-size:14px;color:#fff}
 .setup-note strong{color:#fff}
-.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color.2s}.wx-copy:hover{color:var(--gold-lt)}.guarantee{color:#c0392b;font-weight:700}</style>
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color.2s;white-space:nowrap}.wx-copy:hover{color:var(--gold-lt)}.guarantee{color:#c0392b;font-weight:700}</style>
 </head>
 <body>
 <canvas id="stars"></canvas><div class="nebula"></div>
 <nav>
-  <a class="brand" href="en-index.html"><img src="logo-v2.png" alt="润泽" class="brand-logo"><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
+  <a class="brand" href="en-index.html"><img src="logo-v4.png" alt="润泽" class="brand-logo"><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">☰</button>
   <div class="nav-links"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-faq.html">FAQ</a><a href="en-about.html">About</a><a href="en-pricing.html" class="cur">Pricing</a><a href="en-contact.html">Contact</a><a href="pricing.html" class="lang-sw">中文</a></div>
 </nav>
@@ -156,7 +156,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <div class="cta-box rv">
 <h2>Book a Consultation</h2>
 <p>Email: <a href="mailto:RainFengShui@yahoo.com" style="color:var(--gold-lt);font-weight:600">RainFengShui@yahoo.com</a></p>
-<p>WeChat ID: <span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span> · Phone: <a href="tel:6502480529" style="color:var(--gold-lt);font-weight:600">650-248-0529</a></p>
+<p>WeChat ID: <span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span> · Phone: <a href="tel:6502480529" style="color:var(--gold-lt);font-weight:600"><span style="white-space:nowrap">650-248-0529</span></a></p>
 <p>On-site only · No remote video readings</p>
 <a class="btn" href="en-contact.html">Book Now</a>
 </div>
@@ -177,5 +177,28 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
 <script>
 function copyWechat(el){var t=el.getAttribute('data-copy');function done(){var s=el.textContent;el.textContent=t+' ✓已复制';el.style.color='#e8c766';setTimeout(function(){el.textContent=s;el.style.color=''},1500)}if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done).catch(function(){fallback()})}else{fallback()}function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,99999);try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(ta)}}
-</script></body>
+</script>
+<style>
+.logo-zoom-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;justify-content:center;align-items:center;cursor:pointer}
+.logo-zoom-modal.active{display:flex}
+.logo-zoom-modal img{max-width:85%;max-height:85%;animation:zoomin 0.3s ease}
+@keyframes zoomin{from{transform:scale(0.5);opacity:0}to{transform:scale(1);opacity:1}}
+.brand-logo{cursor:pointer}
+</style>
+<div class="logo-zoom-modal" id="logoZoomModal" onclick="this.classList.remove('active')">
+<img src="logo-v4.png" alt="润泽logo">
+</div>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var logos=document.querySelectorAll(".brand-logo");
+  var modal=document.getElementById("logoZoomModal");
+  logos.forEach(function(logo){
+    logo.addEventListener("click",function(e){
+      e.preventDefault();e.stopPropagation();
+      modal.classList.add("active");
+    });
+  });
+});
+</script>
+</body>
 </html>
