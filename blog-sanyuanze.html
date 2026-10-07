@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三原则：不信的不看，心不诚的不看，不给钱的不看｜润泽天星风水</title>
+<meta name="description" content="润泽先生服务三原则：不信的不看，心不诚的不看，不给钱的不看。医不叩门，师不顺路，法不轻传。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070e;--bg2:#0d0d18;--gold:#c9a227;--gold-lt:#e8c766;--gold-dk:#8a6d1a;--ink:#ece5d3;--muted:#9a917e;--red:#a83232;--line:rgba(201,162,39,.28)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Serif SC',serif;line-height:1.9;overflow-x:hidden}
+#stars{position:fixed;inset:0;z-index:-2}
+.nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;transform:rotate(-4deg)}
+.brand-name{font-size:19px;letter-spacing:.2em;font-weight:600}
+.brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
+.nav-links{display:flex;gap:34px}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.15em}
+.nav-links a:hover,.nav-links a.cur{color:var(--gold-lt)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-lt);font-size:22px;padding:6px 14px;border-radius:4px;cursor:pointer;font-family:inherit}
+@media(max-width:760px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}.nav-links.open{display:flex}.nav-links a{font-size:18px;letter-spacing:.2em;padding:12px;display:block}}
+.page-hero{padding:170px 6vw 70px;text-align:center}
+.page-hero .eyebrow{color:var(--gold);letter-spacing:.4em;text-indent:.4em;font-size:13px;margin-bottom:18px}
+.page-hero h1{font-size:clamp(26px,4.5vw,42px);font-weight:600;background:linear-gradient(175deg,#f7ecc8 20%,var(--gold-lt) 45%,var(--gold-dk) 75%,#f0d98a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px;line-height:1.5}
+.page-hero p{color:var(--muted);letter-spacing:.15em;font-size:15px}
+article{max-width:820px;margin:0 auto;padding:40px 6vw 80px}
+.dsec{margin-bottom:44px}
+.dsec h2{font-size:22px;color:var(--gold-lt);letter-spacing:.08em;margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.dsec h2 .tick{color:#e74c3c;margin-right:10px}
+.dsec p{color:#fff;font-size:15.5px;margin-bottom:16px;text-align:justify}
+.dsec p strong{color:#fff;font-weight:600}
+.principle{background:linear-gradient(170deg,rgba(201,162,39,.08),transparent 60%),var(--bg2);border:1px solid var(--line);border-radius:8px;padding:32px;margin:28px 0}
+.principle h3{color:var(--gold-lt);font-size:20px;letter-spacing:.1em;margin-bottom:14px}
+.principle p{color:#fff;font-size:15px;margin-bottom:10px}
+.principle p strong{color:#fff;font-weight:600}
+.cta-box{text-align:center;border:1px solid rgba(192,57,43,.4);border-radius:8px;padding:60px 6vw;margin:40px auto;max-width:700px;background:radial-gradient(ellipse 70% 90% at 50% 110%,rgba(192,57,43,.12),transparent 70%),var(--bg2)}
+.cta-box h2{font-size:24px;color:var(--gold-lt);letter-spacing:.08em;margin-bottom:14px}
+.cta-box p{color:var(--muted);font-size:14.5px;margin-bottom:8px}
+.btn{display:inline-block;padding:15px 46px;font-size:15px;letter-spacing:.25em;text-indent:.25em;text-decoration:none;border-radius:2px;background:linear-gradient(160deg,#d64533,#b93224 60%,#8e2318);color:#fff;font-weight:700;margin-top:26px;box-shadow:0 4px 20px rgba(214,69,51,.35)}
+footer{border-top:1px solid var(--line);padding:44px 6vw;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.15em;margin-top:60px}
+footer .fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.3em;margin-bottom:12px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+.rv.on{opacity:1;transform:none}
+a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
+
+.fnav{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:24px}
+.fnav a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.2em}
+.fnav a:hover{color:var(--gold-lt)}
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color .2s}.wx-copy:hover{color:var(--gold-lt)}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}</style>
+</head>
+<body>
+<canvas id="stars"></canvas><div class="nebula"></div>
+<nav>
+  <a class="brand" href="index.html"><span class="seal">潤澤</span><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
+  <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="菜单">☰</button>
+  <div class="nav-links"><a href="index.html">首页</a><a href="services.html">服务</a><a href="about.html">关于</a><a href="blog.html" class="cur">博客</a><a href="faq.html">问答</a><a href="contact.html">预约</a></div>
+</nav>
+<div class="page-hero">
+  <div class="eyebrow rv">润泽先生 · 服务三原则</div>
+  <h1 class="rv">不信的不看，心不诚的不看<br>不给钱的不看</h1>
+  <p class="rv">医不叩门，师不顺路，法不轻传</p>
+</div>
+<article>
+  <div class="dsec rv">
+    <p>很多人问我：润泽先生，你的服务有什么门槛吗？</p>
+    <p>有。三条。这三条， <strong>一条不满足，我不看</strong>。</p>
+    <p>不是我架子大，是易学行业的规矩，也是对双方负责。</p>
+  </div>
+
+  <div class="principle rv">
+    <h3>第一：不信的不看</h3>
+    <p><strong class="pl">信心和意念的力量非常强大。</strong>风水调理，信则灵。不是心理安慰，是能量层面的共振。</p>
+    <p>如果在承诺保效果的前提下，你依然不信——那就没有任何服务的必要了。勉强做，双方都浪费时间。</p>
+    <p>我不缺这一个客户，我要的是 <strong>有效果的案例</strong>。</p>
+  </div>
+
+  <div class="principle rv">
+    <h3>第二：心不诚的不看</h3>
+    <p><strong class="pl">医不叩门，师不顺路，法不轻传，道不贱卖。</strong></p>
+    <p>如果你真心想改变个人、家庭的状况，就应该郑重预约、邀请、安排、配合风水师，按照专业人士的建议，严格执行修改意见，确保效果。</p>
+    <p>敷衍了事的，我不接。 <strong>效果是我招牌，我比你更在乎效果。</strong></p>
+  </div>
+
+  <div class="principle rv">
+    <h3>第三：不给钱的不看</h3>
+    <p>家有家规，行有行规。易学行业有特殊的行业规矩： <strong>卦不空出，道不贱卖</strong>。</p>
+    <p>背后的底层逻辑是能量平等交换。出多大的费用，办多大的事。否则有损于福主和风水师。</p>
+    <p>免费的东西没人珍惜， <strong>付费是对效果的第一重保障</strong>。</p>
+  </div>
+
+  <div class="dsec rv">
+    <h2><span class="tick">✦</span>为什么定这三条</h2>
+    <p>我不是小学初中没毕业的江湖术士，不是夸夸其谈没有实践经验的书房先生。我是 <strong>深谙西方科技、掌握易经国学精髓核心技术</strong> 的专业人士，有众多实践经验，微信视频号有众多作品为证。</p>
+    <p><strong class="pl">我的作品为我代言，一切以技术实力和效果说话。</strong></p>
+    <p>没有金刚钻，不揽瓷器活。实践是检验真理的唯一标准。</p>
+  </div>
+
+  <div class="dsec rv">
+    <h2><span class="tick">✦</span>效果保证</h2>
+    <p>作为主要服务于美国的实战派风水师，我为效果做出郑重保证和承诺： <strong>如果在一定期限内没有效果，我会收回各种布局阵法，退还收取客户的款项</strong>。</p>
+    <p>对效果做出承诺和保证—— <strong>这是美国第一家，没有其他人可以做到</strong>。</p>
+  </div>
+
+  <div class="cta-box rv">
+    <h2>如果你信、你诚心、你愿意付费</h2>
+    <p>微信：<span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span></p>
+    <p>欢迎预约，我为你保驾护航</p>
+<p>电话：<a href="tel:6502480529" style="color:var(--gold-lt);font-weight:600">650-248-0529</a></p>
+    <a class="btn" href="contact.html">立即预约</a>
+  </div>
+</article>
+<footer>
+<div class="fnav"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html">博客</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a></div>
+<a href="index.html" style="text-decoration:none"><a href="index.html" style="text-decoration:none"><div class="fbrand">润泽天星风水</div></a></a>
+<div>RAIN FENGSHUI · <span class="guarantee">效果保证·无效退款</span></div>
+<div style="margin-top:10px">© 2026 rainfengshui.com</div>
+</footer>
+<script>
+const c=document.getElementById('stars'),x=c.getContext('2d');let W,H,stars=[];
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight;stars=Array.from({length:Math.min(360,W*H/4200)},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.4+.3,p:Math.random()*6.28,s:.4+Math.random()*1.2,g:Math.random()<.14}))}
+rs();addEventListener('resize',rs);
+(function loop(t){x.clearRect(0,0,W,H);for(const s of stars){const tw=.35+.65*Math.abs(Math.sin(t*.001*s.s+s.p));x.beginPath();x.arc(s.x,s.y,s.r,0,7);x.fillStyle=s.g?`rgba(232,199,102,${tw})`:`rgba(255,244,220,${tw*.85})`;x.fill()}requestAnimationFrame(loop)})(0);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+<script>
+function copyWechat(el){var t=el.getAttribute('data-copy');function done(){var s=el.textContent;el.textContent=t+' ✓已复制';el.style.color='#e8c766';setTimeout(function(){el.textContent=s;el.style.color=''},1500)}if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done).catch(function(){fallback()})}else{fallback()}function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,99999);try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(ta)}}
+</script></body>
+</html>

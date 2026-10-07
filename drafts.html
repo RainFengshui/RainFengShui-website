@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>草稿审批｜润泽天星风水</title>
+<meta property="og:title" content="风水博客｜润泽天星风水">
+<meta property="og:description" content="润泽先生撰写的风水实战文章：买房风水、办公室布局、种生基问答、墓地选择、八字解读。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rainfengshui.com/blog.html">
+<meta property="og:image" content="https://rainfengshui.com/baishi-1.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="风水博客｜润泽天星风水">
+<meta name="twitter:description" content="润泽先生撰写的风水实战文章：买房风水、办公室布局、种生基问答、墓地选择、八字解读。">
+<meta name="description" content="风水知识文章：买房风水十大注意事项、办公室风水布局、种生基问答、墓地风水选择、八字解读。润泽先生亲撰。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700;900&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070e;--bg2:#0d0d18;--gold:#c9a227;--gold-lt:#e8c766;--gold-dk:#8a6d1a;--ink:#ece5d3;--muted:#9a917e;--red:#a83232;--line:rgba(201,162,39,.28)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Serif SC',serif;line-height:1.9;overflow-x:hidden}
+#stars{position:fixed;inset:0;z-index:-2}
+.nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;transform:rotate(-4deg)}
+.brand-name{font-size:19px;letter-spacing:.35em;font-weight:600}
+.brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
+.nav-links{display:flex;gap:34px}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.25em}
+.nav-links a:hover,.nav-links a.cur{color:var(--gold-lt)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-lt);font-size:22px;padding:6px 14px;border-radius:4px;cursor:pointer;font-family:inherit}
+nav{position:fixed}
+@media(max-width:760px){
+  .menu-btn{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
+}
+.page-hero{padding:170px 6vw 70px;text-align:center}
+.page-hero .eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
+.page-hero h1{font-size:clamp(38px,6vw,64px);font-weight:900;letter-spacing:.15em;background:linear-gradient(175deg,#f7ecc8 20%,var(--gold-lt) 45%,var(--gold-dk) 75%,#f0d98a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+.page-hero p{color:var(--muted);letter-spacing:.2em;font-size:15px}
+section{padding:70px 6vw;max-width:1150px;margin:0 auto}
+.svc-row{display:grid;grid-template-columns:120px 1fr;gap:34px;align-items:start;border:1px solid var(--line);border-radius:6px;padding:44px 40px;margin-bottom:26px;background:linear-gradient(170deg,rgba(201,162,39,.05),transparent 60%),var(--bg2);transition:all .35s;text-decoration:none;color:var(--ink)}
+.svc-row:hover{border-color:var(--gold);transform:translateX(6px)}
+@media(max-width:640px){.svc-row{grid-template-columns:1fr;gap:14px}}
+.svc-row .glyph{font-size:52px;text-align:center;filter:sepia(.4) saturate(1.4)}
+.svc-row h3{font-size:21px;letter-spacing:.2em;color:var(--gold-lt);margin-bottom:12px}
+.svc-row h3 .tag{font-size:12px;border:1px solid var(--red);color:#e08a8a;border-radius:3px;padding:2px 10px;margin-left:12px;letter-spacing:.15em;vertical-align:middle}
+.svc-row p{color:var(--muted);font-size:14.5px;margin-bottom:10px}
+.svc-row ul{color:#fff;font-size:14px;list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:10px}
+.svc-row ul li::before{content:'✦ ';color:var(--gold-dk);font-size:11px}
+.svc-row .more{margin-top:14px;font-size:14px;color:#ffd700;font-weight:700;letter-spacing:.3em;text-decoration:underline;text-underline-offset:4px}
+.cta-box{text-align:center;border:1px solid var(--line);border-radius:8px;padding:70px 6vw;margin:30px auto;max-width:900px;background:radial-gradient(ellipse 70% 90% at 50% 110%,rgba(201,162,39,.14),transparent 70%),var(--bg2)}
+.btn{display:inline-block;padding:15px 46px;font-size:15px;letter-spacing:.35em;text-indent:.35em;text-decoration:none;border-radius:2px;font-family:'Noto Serif SC',serif;background:linear-gradient(160deg,var(--gold-lt),var(--gold) 60%,var(--gold-dk));color:#1a1405;font-weight:700;margin-top:26px}
+footer{border-top:1px solid var(--line);padding:44px 6vw;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:60px}
+footer .fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+.rv.on{opacity:1;transform:none}
+a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
+
+.slideshow{position:relative;max-width:600px;margin:0 auto;overflow:hidden;border-radius:12px;border:1px solid rgba(201,162,75,.25);aspect-ratio:4/3}
+.slides{position:relative;width:100%;height:100%}
+.slide{position:absolute;inset:0;opacity:0;animation:slideFade 24s infinite}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
+.slide .cap{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.65);color:#e8c86a;text-align:center;padding:8px;font-size:14px;letter-spacing:.1em}
+.slide:nth-child(1){animation-delay:0s}
+.slide:nth-child(2){animation-delay:4s}
+.slide:nth-child(3){animation-delay:8s}
+.slide:nth-child(4){animation-delay:12s}
+.slide:nth-child(5){animation-delay:16s}
+.slide:nth-child(6){animation-delay:20s}
+@keyframes slideFade{0%{opacity:0}2%{opacity:1}14%{opacity:1}16.66%{opacity:0}100%{opacity:0}}
+
+.lang-sw{border:1px solid var(--gold);border-radius:4px;padding:4px 10px!important;color:var(--gold)!important;font-size:12px!important}
+.lang-sw:hover{background:var(--gold);color:#0a0a0a!important}
+
+/* 喜用色增强：红色点缀 */
+.btn-primary{background:linear-gradient(160deg,#c0392b,#a93226 60%,#7b241c)!important;color:#fff!important}
+.accent-red{color:#e74c3c!important}
+.hr-red{border:none;height:2px;background:linear-gradient(90deg,transparent,#c0392b,transparent);margin:30px auto;max-width:300px}
+h2 .tick{color:#e74c3c!important}
+.cta-box{border-color:rgba(192,57,43,.4)!important}
+
+
+/* 红色主按钮 - 喜用色 */
+.btn,.btn-gold{background:linear-gradient(160deg,#d64533,#b93224 60%,#8e2318)!important;color:#fff!important;border:none!important;box-shadow:0 4px 20px rgba(214,69,51,.35)!important}
+.btn:hover,.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(214,69,51,.55)!important}
+
+
+.cat-section{margin-bottom:60px}
+.cat-title{font-size:26px;color:var(--gold-lt);letter-spacing:.15em;margin-bottom:30px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.cat-title .tick{color:#e74c3c;margin-right:10px}
+.cat-title .count{font-size:14px;color:var(--muted);margin-left:12px;letter-spacing:.1em}
+
+.fnav{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:24px}
+.fnav a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.2em}
+.fnav a:hover{color:var(--gold-lt)}
+.guarantee{color:#c0392b;font-weight:700}</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html"><span class="seal">潤澤</span><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
+  <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="菜单">☰</button>
+  <div class="nav-links"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html" class="cur">博客</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a><a href="en-blog.html" class="lang-sw">EN</a></div>
+</nav>
+<section class="drafts-sec">
+  <h1>博客草稿审批</h1>
+  <p class="drafts-sub">仅您可见 · 审批通过后转为公开发表</p>
+  <div class="drafts-grid">
+
+  <div class="draft-card">
+    <div class="draft-date">2026-10-06 · 待审批</div>
+    <h3>风水师都是骗钱的吗？</h3>
+    <p>五招教你辨真假</p>
+    <div class="draft-actions">
+      <a href="blog-fengshuishi-2026-10-06.html" class="btn" target="_blank">预览全文</a> <a href="en-blog-fengshuishi-2026-10-06.html" class="btn" target="_blank">EN</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-06 · 待审批</div>
+    <h3>为什么有的风水师看得准、有的不准？</h3>
+    <p>门派和功力的差别</p>
+    <div class="draft-actions">
+      <a href="blog-zhunbuzhun-2026-10-06.html" class="btn" target="_blank">预览全文</a> <a href="en-blog-zhunbuzhun-2026-10-06.html" class="btn" target="_blank">EN</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>风水是迷信吗？</h3>
+    <p>用实效说话</p>
+    <div class="draft-actions">
+      <a href="blog-mixin-2026-10-05.html" class="btn" target="_blank">预览全文</a> <span style="color:#4caf50;font-weight:700">✓ 已发布</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>摆个物件就能发财？</h3>
+    <p>风水不是魔法</p>
+    <div class="draft-actions">
+      <a href="blog-wujian-2026-10-05.html" class="btn" target="_blank">预览全文</a> <span style="color:#4caf50;font-weight:700">✓ 已发布</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>订单越来越少？ 可能是你的办公室风水在漏财</h3>
+    <p>别只怪市场，先看看你的财位</p>
+    <div class="draft-actions">
+      <a href="blog-pain-101.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>官司一个接一个？ 可能是你办公室的官非煞气没化解</h3>
+    <p>官司不只是法律问题，更是风水问题</p>
+    <div class="draft-actions">
+      <a href="blog-pain-102.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>核心人才总留不住？ 问题可能出在你办公室的留人风水</h3>
+    <p>留不住人，别只怪工资，看看风水</p>
+    <div class="draft-actions">
+      <a href="blog-pain-103.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>投资总是亏？ 你的决策位可能坐错了地方</h3>
+    <p>决策失误，可能是位置错了</p>
+    <div class="draft-actions">
+      <a href="blog-pain-104.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>现金流快断了？ 催财布局可能是你的救命稻草</h3>
+    <p>钱进不来，先看看财路通不通</p>
+    <div class="draft-actions">
+      <a href="blog-pain-105.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>合伙人反目成仇？ 和气生财局先把&quot;气&quot;调顺了</h3>
+    <p>人和才能生财，气不和财不聚</p>
+    <div class="draft-actions">
+      <a href="blog-pain-106.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>厂房选址错了？ 搬进去之前先做一次风水评估</h3>
+    <p>厂房是企业的根，根错了全错</p>
+    <div class="draft-actions">
+      <a href="blog-pain-107.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>办公室布局一团乱？ 老板位调对了，公司就顺了</h3>
+    <p>老板位是公司的定海神针</p>
+    <div class="draft-actions">
+      <a href="blog-pain-108.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>开业日子没选对？ 好日子是企业成功的第一步</h3>
+    <p>开业择吉，企业的高起点</p>
+    <div class="draft-actions">
+      <a href="blog-pain-109.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>品牌名起得不利？ 好名字是企业最好的风水</h3>
+    <p>名不正则言不顺，名正则财顺</p>
+    <div class="draft-actions">
+      <a href="blog-pain-110.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>经销商不听话？ 震位调理让渠道服服帖帖</h3>
+    <p>震为雷，主号令，震位顺则渠道顺</p>
+    <div class="draft-actions">
+      <a href="blog-pain-111.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>应收账款收不回？ 催债奇门帮你把钱要回来</h3>
+    <p>欠债还钱，奇门助力</p>
+    <div class="draft-actions">
+      <a href="blog-pain-112.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>竞争对手恶意打压？ 化小人局让你稳如泰山</h3>
+    <p>小人作祟，风水化解</p>
+    <div class="draft-actions">
+      <a href="blog-pain-113.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>产品滞销压仓库？ 仓库风水可能是病根</h3>
+    <p>仓库是企业的财库，财库不旺货难销</p>
+    <div class="draft-actions">
+      <a href="blog-pain-114.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>盲目扩张栽了跟头？ 战略咨询先看天时地利</h3>
+    <p>扩张之前，先问风水</p>
+    <div class="draft-actions">
+      <a href="blog-pain-115.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>融资总被拒？ 贵人位激活让投资人主动找你</h3>
+    <p>贵人不到，先看看贵人位</p>
+    <div class="draft-actions">
+      <a href="blog-pain-116.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>税务问题不断？ 先化解办公室的口舌是非</h3>
+    <p>是非不断，根子在气场</p>
+    <div class="draft-actions">
+      <a href="blog-pain-117.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>员工士气低落死气沉沉？ 把明堂打开，气就顺了</h3>
+    <p>明堂开阔，人心才开阔</p>
+    <div class="draft-actions">
+      <a href="blog-pain-118.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>客户投诉越来越多？ 前台风水可能是第一张脸没做好</h3>
+    <p>前台是公司的脸，脸不好看客不留</p>
+    <div class="draft-actions">
+      <a href="blog-pain-119.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>供应链说断就断？ 靠山位加强让后方稳如磐石</h3>
+    <p>靠山稳，后方才稳</p>
+    <div class="draft-actions">
+      <a href="blog-pain-120.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>租金贵得肉疼？ 搬迁选址一次到位，越搬越旺</h3>
+    <p>搬对地方，租金花得值</p>
+    <div class="draft-actions">
+      <a href="blog-pain-121.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>谈判总谈崩？ 谈判位布局让你气场压人一头</h3>
+    <p>谈判桌上，气场就是底气</p>
+    <div class="draft-actions">
+      <a href="blog-pain-122.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>会议室里总做错决定？ 会议室风水可能是病根</h3>
+    <p>决策的地方，气场决定脑子</p>
+    <div class="draft-actions">
+      <a href="blog-pain-123.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>财务室天天漏财？ 布局调对了，钱才守得住</h3>
+    <p>财务室是企业的钱袋子，袋子不能漏</p>
+    <div class="draft-actions">
+      <a href="blog-pain-124.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>公司大门天天纳煞？ 化解了，气运就顺了</h3>
+    <p>大门是企业的嘴，吃什么决定气运</p>
+    <div class="draft-actions">
+      <a href="blog-pain-125.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>财富越积越多却越守不住？ 你的财库可能漏了</h3>
+    <p>守不住的钱，不是命，是风水</p>
+    <div class="draft-actions">
+      <a href="blog-pain-126.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>家业传到第三代就散了？ 家族风水的传承密码</h3>
+    <p>富不过三代，不是诅咒，是风水断了</p>
+    <div class="draft-actions">
+      <a href="blog-pain-127.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>钱再多也换不来健康？ 你住的房子可能在耗你的命</h3>
+    <p>病根不在身体，在房子</p>
+    <div class="draft-actions">
+      <a href="blog-pain-128.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>孩子不爱读书沉迷手机？ 文昌位可能被压住了</h3>
+    <p>不是孩子笨，是风水在拖后腿</p>
+    <div class="draft-actions">
+      <a href="blog-pain-129.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>夫妻总吵架感情变淡？ 卧室风水可能出了问题</h3>
+    <p>夫妻位乱了，感情就乱了</p>
+    <div class="draft-actions">
+      <a href="blog-pain-130.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>官司不断麻烦缠身？ 白虎煞可能在作怪</h3>
+    <p>官非缠身，很多时候是风水上的官非煞</p>
+    <div class="draft-actions">
+      <a href="blog-pain-131.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>投资总踩坑被人骗钱？ 破财格局要防</h3>
+    <p>防破财，要在被骗之前布局</p>
+    <div class="draft-actions">
+      <a href="blog-pain-132.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>整夜失眠越睡越累？ 卧室气场可能乱了</h3>
+    <p>睡眠是人生三分之一的大事</p>
+    <div class="draft-actions">
+      <a href="blog-pain-133.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>意外车祸血光不断？ 煞气可能盯上你了</h3>
+    <p>煞不除，祸不止</p>
+    <div class="draft-actions">
+      <a href="blog-pain-134.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>做什么都不顺运势跌到谷底？ 该转运了</h3>
+    <p>等运来，不如改运来</p>
+    <div class="draft-actions">
+      <a href="blog-pain-135.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>关键时刻总没人帮你？ 贵人位可能空了</h3>
+    <p>贵人运，也是风水管的</p>
+    <div class="draft-actions">
+      <a href="blog-pain-136.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>烂桃花缠身家宅不宁？ 桃花煞要斩</h3>
+    <p>烂桃花不斩，好运不来</p>
+    <div class="draft-actions">
+      <a href="blog-pain-137.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>孩子叛逆顶撞父母？ 子女宫气场要调</h3>
+    <p>孩子没坏，可能是气场坏了</p>
+    <div class="draft-actions">
+      <a href="blog-pain-138.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>父母身体越来越差？ 家里的寿位可能有问题</h3>
+    <p>尽孝要趁早，寿位要调好</p>
+    <div class="draft-actions">
+      <a href="blog-pain-139.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>兄弟反目家无宁日？ 宅气不和要调</h3>
+    <p>家和万事兴，气和人自和</p>
+    <div class="draft-actions">
+      <a href="blog-pain-140.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>遗产争夺兄弟反目？ 先看看祖坟风水</h3>
+    <p>祖坟不安，子孙必争</p>
+    <div class="draft-actions">
+      <a href="blog-pain-141.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>豪宅越住越不顺越住越穷？ 大宅最怕格局错</h3>
+    <p>格局一错，越大越凶</p>
+    <div class="draft-actions">
+      <a href="blog-pain-142.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>书房坐半天没灵感决策总失误？ 文昌位被堵了</h3>
+    <p>书房是司令部，不能建在洼地</p>
+    <div class="draft-actions">
+      <a href="blog-pain-143.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>搬进主卧后身体越来越差？ 床位可能犯了大忌</h3>
+    <p>三分之一的人生，不能泡在病气里</p>
+    <div class="draft-actions">
+      <a href="blog-pain-144.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>保险箱放错一个位置， 等于把财神往外推</h3>
+    <p>小金库放对了，才聚财</p>
+    <div class="draft-actions">
+      <a href="blog-pain-145.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>后代一代不如一代？ 祖坟可能出了问题</h3>
+    <p>阴宅管三代，祖坟一坏，祸及子孙</p>
+    <div class="draft-actions">
+      <a href="blog-pain-146.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>气场弱镇不住场面？ 种生基借地气改运</h3>
+    <p>向大地借能量，从根上改运</p>
+    <div class="draft-actions">
+      <a href="blog-pain-147.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>名字起错了运势被压半辈子？ 改名要趁早</h3>
+    <p>名字跟人一辈子，起错了等于背石头走路</p>
+    <div class="draft-actions">
+      <a href="blog-pain-148.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>大事总选错日子功亏一篑？ 好日子是选出来的</h3>
+    <p>日子不对，努力白费</p>
+    <div class="draft-actions">
+      <a href="blog-pain-149.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>本命年诸事不顺？ 太岁要化，布局要做</h3>
+    <p>本命年不是只能熬</p>
+    <div class="draft-actions">
+      <a href="blog-pain-150.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>买房选错楼层， 住得越久越倒霉？</h3>
+    <p>楼层有五行，选对了助运，选错了天天耗你</p>
+    <div class="draft-actions">
+      <a href="blog-pain-151.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>房子缺角， 缺哪一角就伤哪一位家人？</h3>
+    <p>方正的房子聚气，缺角的房子漏气</p>
+    <div class="draft-actions">
+      <a href="blog-pain-152.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>大门朝向错了， 整套房的运都错了？</h3>
+    <p>大门朝向不看方位吉凶，看的是门外山水路</p>
+    <div class="draft-actions">
+      <a href="blog-pain-153.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>客厅越住越乱？ 那是你家气场乱了</h3>
+    <p>客厅是家的心脏，心脏乱了全身都病</p>
+    <div class="draft-actions">
+      <a href="blog-pain-154.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>主卧选错位置， 夫妻感情越住越淡？</h3>
+    <p>人一生三分之一在卧室，位置错了天天耗</p>
+    <div class="draft-actions">
+      <a href="blog-pain-155.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>厨房位置错了， 全家人的健康买单？</h3>
+    <p>厨房是养命之源，位置错了病从口入</p>
+    <div class="draft-actions">
+      <a href="blog-pain-156.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>卫生间压中宫， 这套房住不得？</h3>
+    <p>中宫是房子的心脏，秽气压心全家倒霉</p>
+    <div class="draft-actions">
+      <a href="blog-pain-157.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>阳台只用来晒衣服？ 你错过了一个聚宝盆</h3>
+    <p>阳台是纳气口，布局对了就是聚宝盆</p>
+    <div class="draft-actions">
+      <a href="blog-pain-158.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>装修没择日， 动土动了太岁？</h3>
+    <p>装修是动土，日子错了后患无穷</p>
+    <div class="draft-actions">
+      <a href="blog-pain-159.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>搬家日子随便选？ 新房第一天气场就定了</h3>
+    <p>入宅第一天，定的是一家人的起点运</p>
+    <div class="draft-actions">
+      <a href="blog-pain-160.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>邻居总找茬？ 可能是你家犯了小人煞</h3>
+    <p>是非找上门，先看你家门口的气场</p>
+    <div class="draft-actions">
+      <a href="blog-pain-161.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>花大钱买学区房， 孩子成绩还是上不去？</h3>
+    <p>学区是外因，文昌位才是孩子读书的内因</p>
+    <div class="draft-actions">
+      <a href="blog-pain-162.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>家里又暗又闷？ 光进不来，财也进不来</h3>
+    <p>明堂要亮，家运才亮</p>
+    <div class="draft-actions">
+      <a href="blog-pain-163.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>横梁压顶， 睡在下面的人最倒霉</h3>
+    <p>横梁像一把刀，天天悬在头顶</p>
+    <div class="draft-actions">
+      <a href="blog-pain-164.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>大门对阳台？ 财从你家穿堂而过</h3>
+    <p>穿堂煞，漏财最凶的格局之一</p>
+    <div class="draft-actions">
+      <a href="blog-pain-165.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>一开门就看见灶？ 财库外露要破财</h3>
+    <p>开门见灶，钱财外露，破财跑不了</p>
+    <div class="draft-actions">
+      <a href="blog-pain-166.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>卧室门对门， 家里口舌是非不断？</h3>
+    <p>门对门，是非多，家人天天对着吵</p>
+    <div class="draft-actions">
+      <a href="blog-pain-167.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>镜子摆错了， 半夜照出&#x27;不干净的东西&#x27;？</h3>
+    <p>镜子属阴，摆错了比不摆更凶</p>
+    <div class="draft-actions">
+      <a href="blog-pain-168.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>家里植物放错了， 越养越阴？</h3>
+    <p>植物是活的气场，放错了就是活的煞</p>
+    <div class="draft-actions">
+      <a href="blog-pain-169.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>鱼缸放错位置， 养的不是鱼是煞？</h3>
+    <p>鱼缸是催财利器，放错了就是破财凶器</p>
+    <div class="draft-actions">
+      <a href="blog-pain-170.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>玄关设计错了， 好运进不了门</h3>
+    <p>玄关是咽喉，咽喉堵了全身不顺</p>
+    <div class="draft-actions">
+      <a href="blog-pain-171.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>楼梯位置错了， 家运一步步往下走？</h3>
+    <p>楼梯是家运的台阶，方向错了越走越低</p>
+    <div class="draft-actions">
+      <a href="blog-pain-172.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>车库压错了方位， 家运被车&#x27;碾&#x27;没了？</h3>
+    <p>车库是现代住宅的新课题，气场一样要管</p>
+    <div class="draft-actions">
+      <a href="blog-pain-173.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>小区环境差， 买房时没看外面？</h3>
+    <p>户型是小风水，小区环境是大风水</p>
+    <div class="draft-actions">
+      <a href="blog-pain-174.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>物业纠纷不断？ 家里需要布个和气局</h3>
+    <p>是非不断不是人的问题，是气场的问题</p>
+    <div class="draft-actions">
+      <a href="blog-pain-175.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>结婚日子随便选？ 小心婚后矛盾不断</h3>
+    <p>好日子，是婚姻的第一道保险</p>
+    <div class="draft-actions">
+      <a href="blog-pain-176.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>婚后感情越来越淡？ 可能是婚房风水出了问题</h3>
+    <p>卧室，是婚姻的第二张脸</p>
+    <div class="draft-actions">
+      <a href="blog-pain-177.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>备孕一年怀不上？ 别只怪身体，先看风水</h3>
+    <p>检查都正常，问题可能在家里</p>
+    <div class="draft-actions">
+      <a href="blog-pain-178.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>剖腹产日子随便定？ 宝宝的第一张考卷别乱交</h3>
+    <p>好八字，赢在起跑线</p>
+    <div class="draft-actions">
+      <a href="blog-pain-179.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>能力不差却总升不上去？ 可能是官运被压住了</h3>
+    <p>升迁，实力和运气缺一不可</p>
+    <div class="draft-actions">
+      <a href="blog-pain-180.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>孩子明明很努力， 考试总差一口气？</h3>
+    <p>努力之外，还有考试运</p>
+    <div class="draft-actions">
+      <a href="blog-pain-181.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>创业失败三次？ 可能不是你不行，是时机错了</h3>
+    <p>好项目，也要配好时机</p>
+    <div class="draft-actions">
+      <a href="blog-pain-182.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>跳槽越跳越差？ 转折点选错了</h3>
+    <p>跳对一次，胜过十年苦熬</p>
+    <div class="draft-actions">
+      <a href="blog-pain-183.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>留学花了几十万， 学校选错了？</h3>
+    <p>选校，不仅看排名，还要看合不合</p>
+    <div class="draft-actions">
+      <a href="blog-pain-184.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>新车买来就出事？ 提车日子可能没选对</h3>
+    <p>好日子提车，一路平安</p>
+    <div class="draft-actions">
+      <a href="blog-pain-185.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>开业当天就出状况？ 日子可能冲了你的八字</h3>
+    <p>开门红，日子先选对</p>
+    <div class="draft-actions">
+      <a href="blog-pain-186.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>动土没择日？ 小心动了太岁头上的土</h3>
+    <p>动土是大事，日子不能马虎</p>
+    <div class="draft-actions">
+      <a href="blog-pain-187.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>安葬日子选错？ 后人运势跟着受影响</h3>
+    <p>入土为安，日子是关键</p>
+    <div class="draft-actions">
+      <a href="blog-pain-188.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>搬家后诸事不顺？ 可能是冲了太岁</h3>
+    <p>乔迁之喜，日子先选对</p>
+    <div class="draft-actions">
+      <a href="blog-pain-189.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>合同总在签字前黄了？ 签约也要看日子</h3>
+    <p>好日子落笔，合同顺利落地</p>
+    <div class="draft-actions">
+      <a href="blog-pain-190.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>谈判老是谈崩？ 可能是你选错了时间</h3>
+    <p>好时机出手，谈判占尽先机</p>
+    <div class="draft-actions">
+      <a href="blog-pain-191.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>打官司总输？ 开庭日子可能对你不利</h3>
+    <p>有理，还要有运</p>
+    <div class="draft-actions">
+      <a href="blog-pain-192.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>看病总看不好？ 求医也要择吉</h3>
+    <p>好日子求医，药到病除更快</p>
+    <div class="draft-actions">
+      <a href="blog-pain-193.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>出门总遇到意外？ 出行前先看日子</h3>
+    <p>好日子出门，一路顺风</p>
+    <div class="draft-actions">
+      <a href="blog-pain-194.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>面试十次挂十次？ 问题可能不在简历</h3>
+    <p>面试，实力和气场缺一不可</p>
+    <div class="draft-actions">
+      <a href="blog-pain-195.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>相亲几十次都不成？ 可能是桃花位被堵了</h3>
+    <p>桃花路通了，好姻缘自然来</p>
+    <div class="draft-actions">
+      <a href="blog-pain-196.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>求子心切却无果？ 送子布局了解一下</h3>
+    <p>从八字到风水，全方位打通求子路</p>
+    <div class="draft-actions">
+      <a href="blog-pain-197.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>大病初愈总反复？ 家里的风水可能拖了后腿</h3>
+    <p>好气场，是最好的康复药</p>
+    <div class="draft-actions">
+      <a href="blog-pain-198.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>想转运却不知时机？ 流年运势先看懂</h3>
+    <p>在对的时间，做对的事</p>
+    <div class="draft-actions">
+      <a href="blog-pain-199.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  <div class="draft-card">
+    <div class="draft-date">2026-10-05 · 待审批</div>
+    <h3>本命年事事不顺？ 太岁不是拜拜就完事</h3>
+    <p>化解太岁，要从根上解决</p>
+    <div class="draft-actions">
+      <a href="blog-pain-200.html" class="btn" target="_blank">预览全文</a> <span style="color:#ff9800;font-weight:700">待审核</span>
+    </div>
+  </div>
+  </div>
+</section>
+<footer>
+<div class="fnav"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html">博客</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a></div>
+<a href="index.html" style="text-decoration:none"><a href="index.html" style="text-decoration:none"><div class="fbrand">润泽天星风水</div></a></a>
+<div>RAIN FENGSHUI · <span class="guarantee">效果保证·无效退款</span></div>
+<div style="margin-top:10px">© 2026 rainfengshui.com</div>
+</footer>
+<style>
+.drafts-sec{max-width:900px;margin:0 auto;padding:120px 6vw 60px}
+.drafts-sec h1{color:var(--gold-lt);text-align:center;margin-bottom:8px}
+.drafts-sub{text-align:center;color:var(--muted);margin-bottom:40px}
+.drafts-grid{display:grid;gap:24px}
+.draft-card{border:1px solid var(--line);border-radius:8px;padding:28px;background:var(--bg2)}
+.draft-card h3{color:var(--gold-lt);margin:8px 0}
+.draft-card p{color:#fff}
+.draft-date{color:var(--gold);font-size:13px;letter-spacing:.1em}
+.draft-actions{margin-top:16px}
+</style>
+</body>
+</html>

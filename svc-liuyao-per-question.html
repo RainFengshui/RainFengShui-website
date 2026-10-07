@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>六爻预测｜润泽天星风水</title>
+<meta property="og:title" content="六爻预测｜润泽天星风水">
+<meta property="og:description" content="关键事到临头，起卦一问，成败应期，当场分晓。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rainfengshui.com/svc-liuyao-per-question.html">
+<meta property="og:image" content="https://rainfengshui.com/baishi-1.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="六爻预测｜润泽天星风水">
+<meta name="twitter:description" content="关键事到临头，起卦一问，成败应期，当场分晓。">
+<meta name="description" content="关键事到临头，起卦一问，成败应期，当场分晓。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700;900&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070e;--bg2:#0d0d18;--gold:#c9a227;--gold-lt:#e8c766;--gold-dk:#8a6d1a;--ink:#ece5d3;--muted:#9a917e;--red:#a83232;--line:rgba(201,162,39,.28)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Serif SC',serif;line-height:1.9;overflow-x:hidden}
+#stars{position:fixed;inset:0;z-index:-2}
+.nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;transform:rotate(-4deg)}
+.brand-name{font-size:19px;letter-spacing:.35em;font-weight:600}
+.brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
+.nav-links{display:flex;gap:34px}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.25em}
+.nav-links a:hover,.nav-links a.cur{color:var(--gold-lt)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-lt);font-size:22px;padding:6px 14px;border-radius:4px;cursor:pointer;font-family:inherit}
+nav{position:fixed}
+@media(max-width:760px){
+  .menu-btn{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
+}
+.page-hero{padding:170px 6vw 70px;text-align:center}
+.page-hero .eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
+.page-hero h1{font-size:clamp(38px,6vw,64px);font-weight:900;letter-spacing:.15em;background:linear-gradient(175deg,#f7ecc8 20%,var(--gold-lt) 45%,var(--gold-dk) 75%,#f0d98a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+.page-hero p{color:var(--muted);letter-spacing:.2em;font-size:15px}
+section{padding:70px 6vw;max-width:1150px;margin:0 auto}
+.dsec{margin-bottom:56px}
+.dsec h2{font-size:clamp(24px,3.5vw,32px);letter-spacing:.2em;color:var(--gold-lt);margin-bottom:20px;font-weight:700}
+.dsec h2 .tick{color:var(--gold-dk);margin-right:12px}
+.dsec p{color:#fff;font-size:16px;margin-bottom:16px;line-height:2}
+.dsec p strong{color:#fff;font-weight:600}
+.dsec ul{list-style:none;margin:18px 0}
+.dsec ul li{color:#fff;font-size:15.5px;margin-bottom:12px;line-height:1.9;padding-left:4px}
+.dsec ul li::before{content:'✦ ';color:var(--gold);font-size:13px;margin-right:8px}
+.dsec ul li strong{color:var(--gold-lt);font-weight:600}
+.dnote{border:1px solid var(--line);border-radius:6px;padding:22px 28px;background:rgba(201,162,39,.05);color:var(--muted);font-size:14px;margin-top:24px}
+.cta-box{text-align:center;border:1px solid var(--line);border-radius:8px;padding:70px 6vw;margin:30px auto;max-width:900px;background:radial-gradient(ellipse 70% 90% at 50% 110%,rgba(201,162,39,.14),transparent 70%),var(--bg2)}
+.btn{display:inline-block;padding:15px 46px;font-size:15px;letter-spacing:.35em;text-indent:.35em;text-decoration:none;border-radius:2px;font-family:'Noto Serif SC',serif;background:linear-gradient(160deg,var(--gold-lt),var(--gold) 60%,var(--gold-dk));color:#1a1405;font-weight:700;margin-top:26px}
+.backlink{display:block;text-align:center;margin:40px 0 10px;color:var(--muted);font-size:15px;letter-spacing:.25em}
+.backlink:hover{color:var(--gold-lt)}
+footer{border-top:1px solid var(--line);padding:44px 6vw;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:60px}
+footer .fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+.rv.on{opacity:1;transform:none}
+a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
+
+.slideshow{position:relative;max-width:600px;margin:0 auto;overflow:hidden;border-radius:12px;border:1px solid rgba(201,162,75,.25);aspect-ratio:4/3}
+.slides{position:relative;width:100%;height:100%}
+.slide{position:absolute;inset:0;opacity:0;animation:slideFade 24s infinite}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
+.slide .cap{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.65);color:#e8c86a;text-align:center;padding:8px;font-size:14px;letter-spacing:.1em}
+.slide:nth-child(1){animation-delay:0s}
+.slide:nth-child(2){animation-delay:4s}
+.slide:nth-child(3){animation-delay:8s}
+.slide:nth-child(4){animation-delay:12s}
+.slide:nth-child(5){animation-delay:16s}
+.slide:nth-child(6){animation-delay:20s}
+@keyframes slideFade{0%{opacity:0}2%{opacity:1}14%{opacity:1}16.66%{opacity:0}100%{opacity:0}}
+
+.lang-sw{border:1px solid var(--gold);border-radius:4px;padding:4px 10px!important;color:var(--gold)!important;font-size:12px!important}
+.lang-sw:hover{background:var(--gold);color:#0a0a0a!important}
+
+/* 喜用色增强：红色点缀 */
+.btn-primary{background:linear-gradient(160deg,#c0392b,#a93226 60%,#7b241c)!important;color:#fff!important}
+.accent-red{color:#e74c3c!important}
+.hr-red{border:none;height:2px;background:linear-gradient(90deg,transparent,#c0392b,transparent);margin:30px auto;max-width:300px}
+h2 .tick{color:#e74c3c!important}
+.cta-box{border-color:rgba(192,57,43,.4)!important}
+
+
+/* 红色主按钮 - 喜用色 */
+.btn,.btn-gold{background:linear-gradient(160deg,#d64533,#b93224 60%,#8e2318)!important;color:#fff!important;border:none!important;box-shadow:0 4px 20px rgba(214,69,51,.35)!important}
+.btn:hover,.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(214,69,51,.55)!important}
+
+
+.fnav{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:24px}
+.fnav a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.2em}
+.fnav a:hover{color:var(--gold-lt)}
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color .2s}.wx-copy:hover{color:var(--gold-lt)}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}</style>
+</head>
+<body>
+<canvas id="stars"></canvas><div class="nebula"></div>
+<nav>
+  <a class="brand" href="index.html"><span class="seal">潤澤</span><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
+  <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="菜单">☰</button>
+  <div class="nav-links"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html">博客</a><a href="faq.html">问答</a><a href="about.html">关于</a><a href="pricing.html" class="cur">收费</a><a href="contact.html">预约</a><a href="en-svc-liuyao-per-question.html" class="lang-sw">EN</a></div>
+</nav>
+<div class="page-hero">
+  <div class="eyebrow rv">周易预测</div>
+  <h1 class="rv">六爻预测</h1>
+  <p class="rv">关键事到临头，起卦一问，成败应期，当场分晓。</p>
+</div>
+<section>
+<div class="dsec rv">
+  <h2><span class="tick">✦</span>服务介绍</h2>
+  <p>人生重大抉择面前，最缺的不是信息，而是判断：这笔投资能不能做、这个合作能不能签、官司能不能赢、这个人能不能用。六爻预测就是为这种“到临头的一件事”而设的古法——以钱币起卦，六次成卦，卦象直指事情的成败吉凶与应期。</p>
+  <p>六爻的长处是“专”：一事一测，不问生平，只问眼前这一件事。正因如此，它的应期判断在传统预测术中首屈一指——不但告诉你成败，更告诉你大概什么时候见分晓。</p>
+  <p>需要说明的是：推算的是大概率事件、最大可能性的结果，而非百分之百的定数。能把事情推算得七七八八准确，已是此道高手；凡自称百分百精准者，反而不可信。六爻给出的是最有根据的判断，帮你在下注之前看清牌面。</p>
+</div>
+<div class="dsec rv">
+  <h2><span class="tick">✦</span>服务内容</h2>
+  <ul>
+    <li>当面或电话起卦（摇钱法）</li>
+    <li>断事情成败吉凶</li>
+    <li><strong>推断应期</strong>：事情何时见结果</li>
+    <li>用神、世应、动变全盘分析</li>
+    <li>一事一测，单次咨询限一个问题</li>
+    <li>预测结论文字摘要留存</li>
+  </ul>
+</div>
+<div class="dsec rv">
+  <h2><span class="tick">✦</span>服务流程</h2>
+  <ul>
+    <li>明确你要问的一件事，问题越具体，卦越准</li>
+    <li>约定时间起卦（可当面或电话）</li>
+    <li>先生断卦，逐条讲解卦象结论</li>
+    <li>当场答疑，问题问透为止</li>
+  </ul>
+</div>
+<div class="dsec rv">
+  <h2><span class="tick">✦</span>收费明细</h2>
+  <p><strong class="pl">收费：$200</strong></p>
+  <p>按问题计费，一个问题 $200；一次咨询只测一件事，另起新事须另行起卦。</p>
+</div>
+<div class="dsec rv">
+  <h2><span class="tick">✦</span>效果保证</h2>
+  <p>命理测算类服务当场见分晓，不在“<span class="guarantee">效果保证·无效退款</span>”之列。卦出即有断语，准与不准，事实自会验证。</p>
+</div>
+<div class="dsec rv">
+  <h2><span class="tick">✦</span>联系方式</h2>
+  <p>邮箱：<a href="mailto:RainFengShui@yahoo.com" style="color:var(--gold-lt);font-weight:600">RainFengShui@yahoo.com</a></p>
+  <p>微信号：<strong><span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span></strong></p>
+  <p>电话：<a href="tel:6502480529" style="color:var(--gold-lt);font-weight:600">650-248-0529</a></p>
+</div>
+</section>
+<section><div class="cta-box rv"><h2 style="font-size:clamp(26px,4vw,36px);letter-spacing:.18em;margin-bottom:14px">预约咨询</h2><a class="btn" href="contact.html">立即预约</a></div>
+<a class="backlink rv" href="pricing.html">← 返回收费页</a></section>
+<footer>
+<div class="fnav"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html">博客</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a></div>
+<a href="index.html" style="text-decoration:none"><a href="index.html" style="text-decoration:none"><div class="fbrand">润泽天星风水</div></a></a>
+<div>RAIN FENGSHUI · <span class="guarantee">效果保证·无效退款</span></div>
+<div style="margin-top:10px">© 2026 rainfengshui.com</div>
+</footer>
+<script>
+const c=document.getElementById('stars'),x=c.getContext('2d');let W,H,stars=[];
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight;stars=Array.from({length:Math.min(360,W*H/4200)},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.4+.3,p:Math.random()*6.28,s:.4+Math.random()*1.2,g:Math.random()<.14}))}
+rs();addEventListener('resize',rs);
+(function loop(t){x.clearRect(0,0,W,H);for(const s of stars){const tw=.35+.65*Math.abs(Math.sin(t*.001*s.s+s.p));x.beginPath();x.arc(s.x,s.y,s.r,0,7);x.fillStyle=s.g?`rgba(232,199,102,${tw})`:`rgba(255,244,220,${tw*.85})`;x.fill()}requestAnimationFrame(loop)})(0);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+<script>
+function copyWechat(el){var t=el.getAttribute('data-copy');function done(){var s=el.textContent;el.textContent=t+' ✓已复制';el.style.color='#e8c766';setTimeout(function(){el.textContent=s;el.style.color=''},1500)}if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done).catch(function(){fallback()})}else{fallback()}function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,99999);try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(ta)}}
+</script></body>
+</html>
