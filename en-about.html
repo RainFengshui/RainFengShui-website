@@ -24,23 +24,24 @@ body{background:var(--bg);color:var(--ink);font-family:'Noto Serif SC',serif;lin
 #stars{position:fixed;inset:0;z-index:-2}
 .nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
 nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);margin-left:6px}
+.brand-logo{width:46px;height:46px;object-fit:contain;flex-shrink:0}
 .seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;box-shadow:0 0 18px rgba(168,50,50,.45);transform:rotate(-4deg)}
 .brand-name{font-size:19px;letter-spacing:.35em;font-weight:600}
 .brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
 .nav-links{display:flex;gap:34px}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.25em;transition:color .3s}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.25em;transition:color.3s}
 .nav-links a:hover,.nav-links a.cur{color:var(--gold-lt)}
 .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-lt);font-size:22px;padding:6px 14px;border-radius:4px;cursor:pointer;font-family:inherit}
 nav{position:fixed}
 @media(max-width:760px){
-  .menu-btn{display:block}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
-  .nav-links.open{display:flex}
-  .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
+ .menu-btn{display:block}
+ .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
+ .nav-links.open{display:flex}
+ .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
 }
 .page-hero{padding:170px 6vw 70px;text-align:center;position:relative}
-.page-hero .eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
+.page-hero.eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
 .page-hero h1{font-size:clamp(38px,6vw,64px);font-weight:900;letter-spacing:.15em;background:linear-gradient(175deg,#f7ecc8 20%,var(--gold-lt) 45%,var(--gold-dk) 75%,#f0d98a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
 .page-hero p{color:var(--muted);letter-spacing:.2em;font-size:15px}
 section{padding:80px 6vw;max-width:1080px;margin:0 auto}
@@ -49,7 +50,7 @@ section{padding:80px 6vw;max-width:1080px;margin:0 auto}
 .ornament{text-align:center;color:var(--gold-dk);letter-spacing:.8em;text-indent:.8em;margin-bottom:48px;font-size:14px}
 .story p{color:#fff;font-size:16px;margin-bottom:22px;letter-spacing:.04em;max-width:800px;margin-left:auto;margin-right:auto}
 .story p strong{color:#fff;font-weight:600}
-.story .drop::first-letter{font-size:52px;color:var(--gold);float:left;line-height:1;margin:6px 12px 0 0;font-weight:900}
+.story.drop::first-letter{font-size:52px;color:var(--gold);float:left;line-height:1;margin:6px 12px 0 0;font-weight:900}
 .chain{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin:36px 0}
 .node{border:1px solid var(--gold);border-radius:4px;padding:16px 28px;color:var(--gold-lt);background:rgba(201,162,39,.06);text-align:center;letter-spacing:.12em}
 .node small{color:var(--muted);font-size:12px}
@@ -58,7 +59,7 @@ section{padding:80px 6vw;max-width:1080px;margin:0 auto}
 @media(max-width:700px){.photo-wall{grid-template-columns:1fr 1fr}}
 .ph{aspect-ratio:4/3;border:1px dashed var(--line);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;letter-spacing:.2em;background:rgba(255,255,255,.015)}
 .ph-img{aspect-ratio:4/3;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#000}
-.ph-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.ph-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform.6s ease}
 .ph-img:hover img{transform:scale(1.04)}
 .skills{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;margin-top:30px}
 .skill:hover{border-color:var(--gold);background:rgba(201,162,39,.12)}
@@ -69,8 +70,8 @@ section{padding:80px 6vw;max-width:1080px;margin:0 auto}
 .contact-line{margin-top:28px;color:var(--muted);font-size:14px;letter-spacing:.12em;line-height:2.4}
 .contact-line b{color:var(--gold-lt)}
 footer{border-top:1px solid var(--line);padding:44px 6vw;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:60px}
-footer .fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
-.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+footer.fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity.9s ease,transform.9s ease}
 .rv.on{opacity:1;transform:none}
 a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 
@@ -94,7 +95,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 .btn-primary{background:linear-gradient(160deg,#c0392b,#a93226 60%,#7b241c)!important;color:#fff!important}
 .accent-red{color:#e74c3c!important}
 .hr-red{border:none;height:2px;background:linear-gradient(90deg,transparent,#c0392b,transparent);margin:30px auto;max-width:300px}
-h2 .tick{color:#e74c3c!important}
+h2.tick{color:#e74c3c!important}
 .cta-box{border-color:rgba(192,57,43,.4)!important}
 
 
@@ -106,26 +107,26 @@ h2 .tick{color:#e74c3c!important}
 .fnav{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:24px}
 .fnav a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.2em}
 .fnav a:hover{color:var(--gold-lt)}
-.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color .2s}.wx-copy:hover{color:var(--gold-lt)}.guarantee{color:#c0392b;font-weight:700}</style>
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color.2s}.wx-copy:hover{color:var(--gold-lt)}.guarantee{color:#c0392b;font-weight:700}</style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Rain Fengshui",
-  "alternateName": "润泽天星风水",
-  "description": "Master Rain, 7th-generation heir of Zhang Jiuyi's Star Feng Shui lineage. Bazi analysis, home & grave feng shui, Sheng Ji, Qimen arts. On-site surveys only. Results guaranteed or full refund.",
-  "telephone": "+1-650-248-0529",
-  "url": "https://rainfengshui.com",
-  "priceRange": "$$$",
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Rain Fengshui",
+  "alternateName":"润泽天星风水",
+  "description":"Master Rain, 7th-generation heir of Zhang Jiuyi's Star Feng Shui lineage. Bazi analysis, home & grave feng shui, Sheng Ji, Qimen arts. On-site surveys only. Results guaranteed or full refund.",
+  "telephone":"+1-650-248-0529",
+  "url":"https://rainfengshui.com",
+  "priceRange":"$$$",
   "areaServed": {
-    "@type": "Country",
-    "name": "United States"
+    "@type":"Country",
+    "name":"United States"
   },
   "founder": {
-    "@type": "Person",
-    "name": "Rain",
-    "alternateName": "润泽先生",
-    "jobTitle": "Feng Shui Master"
+    "@type":"Person",
+    "name":"Rain",
+    "alternateName":"润泽先生",
+    "jobTitle":"Feng Shui Master"
   }
 }
 </script>
@@ -133,7 +134,7 @@ h2 .tick{color:#e74c3c!important}
 <body>
 <canvas id="stars"></canvas><div class="nebula"></div>
 <nav>
-  <a class="brand" href="en-index.html"><span class="seal">潤澤</span><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
+  <a class="brand" href="en-index.html"><img src="logo-v2.png" alt="润泽" class="brand-logo"><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">☰</button>
   <div class="nav-links"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-faq.html">FAQ</a><a href="en-about.html" class="cur">About</a><a href="en-pricing.html">Pricing</a><a href="en-contact.html">Contact</a><a href="about.html" class="lang-sw">中文</a></div>
 </nav>
@@ -155,7 +156,7 @@ h2 .tick{color:#e74c3c!important}
   <p class="rv"><strong style="color:#e8c86a">Made by feng shui:</strong> Early in my US real estate career, the home I lived in had excellent feng shui. Within a few years I went from nothing to financial freedom. I knew nothing of feng shui then — I just thought I was lucky.</p>
   <p class="rv"><strong style="color:#e8c86a">Unmade by feng shui:</strong> Then I moved into a mansion — bigger, pricier, grander. Two years later, my family had lost millions of dollars. That's when it hit me: it wasn't me failing — it was the house's feng shui.</p>
   <p class="rv">That painful experience planted a question in me: <strong>just how much does feng shui shape a person's destiny?</strong></p>
-  <p class="rv"><strong style="color:#e8c86a">Seeking a master:</strong> With the same drive that got me into China's top schools and a US PhD, I returned to China and sought out true masters, studying under several — most importantly, formally apprenticing under <strong>Master Zhang Naiyi, sixth-generation heir of Zhang Jiuyi</strong>. Over the years I systematically mastered <strong>Bazi destiny analysis, home and grave feng shui, divination, and Qimen arts</strong>, absorbing the essence of Star feng shui. Among my master's hundreds of disciples, my skill in <strong>locating dragon veins</strong> runs deepest — the foundation of my <strong>Sheng Ji</strong> practice.</p>
+  <p class="rv"><strong style="color:#e8c86a">Seeking a master:</strong> With the same drive that got me into China's top schools and a US PhD, I returned to China and sought out true masters, studying under several — most importantly, formally apprenticing under <strong>Master Zhang Naiyi, sixth-generation heir of Zhang Jiuyi</strong>. Over the years I systematically mastered <strong>Bazi destiny analysis, home and grave feng shui, divination, and Qimen arts</strong>, absorbing the essence of Star feng shui — the crown jewel of the discipline, its most powerful and proven art. Among my master's hundreds of disciples, my skill in <strong>locating dragon veins</strong> runs deepest — the foundation of my <strong>Sheng Ji</strong> practice.</p>
   <p class="rv"><strong style="color:#e8c86a">Proven in practice:</strong> After gaining true knowledge, I started with my own family — finding and fixing the <strong>feng shui problems in our home and ancestral graves</strong>, one by one. I climbed mountains myself to <strong>locate dragon veins</strong>, found several powerful sites, and <strong>planted Sheng Ji</strong>, witnessing <strong>heaven-earth resonance</strong> with my own eyes (several videos on my YouTube channel). Before long, my personal and family fortunes <strong>clearly reversed</strong>. This time I was fully convinced: the real thing works.</p>
   <p class="rv"><strong style="color:#e8c86a">Building a practice in America:</strong> After completing my training, I returned to the US and founded Rain Fengshui — <strong>traditional feng shui practiced with a scientist's rigor</strong>. Fluent in English and versed in both Eastern and Western culture, I serve clients in 200+ countries and regions, with a focus on the US market, offering comprehensive, no-nonsense private feng shui consulting. Behind me stands a network of hundreds of gifted practitioners, ready to solve problems at every level.</p>
 </section>
@@ -165,11 +166,11 @@ h2 .tick{color:#e74c3c!important}
   <h2 class="sec-title rv">Authentic Lineage · Verifiable</h2>
   <div class="ornament rv">✦ ✦ ✦</div>
   <div class="chain rv">
-    <div class="node"><strong style="color:#ffd700;font-size:1.1em">Zhang Jiuyi · 1st Generation</strong><br><small>Direct heir of Lai Buyi · Founding grandmaster of Star feng shui · Early-Qing imperial advisor · Founder of contract feng shui<br>Author of "True Transmission of Piercing Mountains" and "Four Pellets of Geography"</small>
+    <div class="node"><strong style="color:#ffd700;font-size:1.1em">Zhang Jiuyi · 1st Generation</strong><br><small>Direct heir of Lai Buyi · Founding grandmaster of Star feng shui · Early-Qing imperial advisor · Founder of contract feng shui<br>Author of"True Transmission of Piercing Mountains"and"Four Pellets of Geography"</small>
     <span class="arr">→</span><span style="color:var(--muted)">Five generations</span><span class="arr">→</span>
     <div class="node"><strong style="color:#ffd700;font-size:1.1em">Master Zhang Naiyi</strong><br><small>6th-generation heir · Grand synthesizer of I Ching studies · I Ching grandmaster<br>Dozens of published works</small></div>
     <span class="arr">→</span>
-    <div class="node" style="border-color:var(--red)"><strong style="color:#ffd700;font-size:1.1em">Master Rain</strong><br><small>7th-generation heir · Also known as Lingzezi<br>Master of Star feng shui, Bazi, Qimen arts, and divination</small></div>
+    <div class="node" style="border-color:var(--red)"><strong style="color:#ffd700;font-size:1.1em">Master Rain</strong><br><small>7th-generation heir · Specialist in dragon-vein siting & Sheng Ji · Master synthesizer of I Ching studies<br>Master of Star feng shui, Bazi, Qimen arts, and divination</small></div>
   </div>
     <div class="photo-wall">
     <div class="ph-img"><img src="baishi-1.jpg" alt="Apprenticeship ceremony photo"><div class="ph-cap">Apprenticeship Ceremony</div></div>
@@ -179,7 +180,6 @@ h2 .tick{color:#e74c3c!important}
     <div class="ph-img"><img src="baishi-5.jpg" alt="Dinner with Master"><div class="ph-cap">Dinner with Master · An Honor</div></div>
     <div class="ph-img"><img src="baishi-6.jpg" alt="Master and disciple"><div class="ph-cap">Master and Disciple</div></div>
   </div>
-  <p style="text-align:center;color:var(--muted);font-size:13px;letter-spacing:.15em">The Journey of Discipleship</p>
   <p class="rv" style="text-align:center;color:var(--muted);font-size:13px;letter-spacing:.15em">The Journey of Discipleship</p>
 </section>
 
@@ -205,7 +205,7 @@ h2 .tick{color:#e74c3c!important}
 <footer>
 <div class="fnav"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-about.html">About</a><a href="en-pricing.html">Pricing</a><a href="en-contact.html">Contact</a></div>
 <a href="en-index.html" style="text-decoration:none"><div class="fbrand">RAIN FENGSHUI</div></a>
-<div>RAIN FENGSHUI · Effect Guaranteed</div>
+<div>RAIN FENGSHUI · Results Guaranteed</div>
 <div style="margin-top:10px">© 2026 rainfengshui.com</div>
 </footer>
 

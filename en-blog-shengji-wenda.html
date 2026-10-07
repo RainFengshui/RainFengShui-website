@@ -24,7 +24,8 @@ body{background:var(--bg);color:var(--ink);font-family:'Noto Serif SC',serif;lin
 #stars{position:fixed;inset:0;z-index:-2}
 .nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
 nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);margin-left:6px}
+.brand-logo{width:46px;height:46px;object-fit:contain;flex-shrink:0}
 .seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;transform:rotate(-4deg)}
 .brand-name{font-size:19px;letter-spacing:.35em;font-weight:600}
 .brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
@@ -33,20 +34,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:
 .nav-links a:hover,.nav-links a.cur{color:var(--gold-lt)}
 .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-lt);font-size:22px;padding:6px 14px;border-radius:4px;cursor:pointer;font-family:inherit}
 @media(max-width:760px){
-  .menu-btn{display:block}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
-  .nav-links.open{display:flex}
-  .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
+ .menu-btn{display:block}
+ .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
+ .nav-links.open{display:flex}
+ .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
 }
 .page-hero{padding:170px 6vw 60px;text-align:center}
-.page-hero .eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
+.page-hero.eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
 .page-hero h1{font-size:clamp(30px,5vw,52px);font-weight:900;letter-spacing:.12em;background:linear-gradient(175deg,#f7ecc8 20%,var(--gold-lt) 45%,var(--gold-dk) 75%,#f0d98a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px;line-height:1.5}
 .page-hero p{color:var(--muted);letter-spacing:.2em;font-size:15px}
 .byline{color:var(--gold);font-size:14px;letter-spacing:.3em;margin-top:16px}
 section{padding:60px 6vw;max-width:1000px;margin:0 auto}
 .dsec{margin-bottom:50px}
 .dsec h2{font-size:clamp(22px,3.2vw,30px);letter-spacing:.18em;color:var(--gold-lt);margin-bottom:20px;font-weight:700}
-.dsec h2 .tick{color:var(--gold-dk);margin-right:12px}
+.dsec h2.tick{color:var(--gold-dk);margin-right:12px}
 .dsec h3{font-size:19px;color:var(--gold-lt);letter-spacing:.12em;margin:26px 0 12px;font-weight:600}
 .dsec p{color:#fff;font-size:16px;margin-bottom:16px;line-height:2}
 .dsec p strong{color:#fff;font-weight:600}
@@ -66,8 +67,8 @@ section{padding:60px 6vw;max-width:1000px;margin:0 auto}
 .backlink{display:block;text-align:center;margin:40px 0 10px;color:var(--muted);font-size:15px;letter-spacing:.25em}
 .backlink:hover{color:var(--gold-lt)}
 footer{border-top:1px solid var(--line);padding:44px 6vw;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:60px}
-footer .fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
-.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+footer.fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity.9s ease,transform.9s ease}
 .rv.on{opacity:1;transform:none}
 a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 .lang-sw{border:1px solid var(--gold);border-radius:4px;padding:4px 10px!important;color:var(--gold)!important;font-size:12px!important}
@@ -79,39 +80,39 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 .pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}</style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
   "mainEntity": [
     {
-      "@type": "Question",
-      "name": "Is Sheng Ji superstition?",
+      "@type":"Question",
+      "name":"Is Sheng Ji superstition?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sheng Ji is a destiny-improvement method passed down for a thousand years in Daoism and feng shui — used by emperors, generals, and tycoons across dynasties. The principle: 'borrow the earth's spiritual qi to supplement what you lack.' Personal tokens (hair, clothing, bazi chart) are buried in a dragon-lair site, absorbing heaven-earth energy to shift fortune. Believe it or not — skeptics need not apply."
+        "@type":"Answer",
+        "text":"Sheng Ji is a destiny-improvement method passed down for a thousand years in Daoism and feng shui — used by emperors, generals, and tycoons across dynasties. The principle: 'borrow the earth's spiritual qi to supplement what you lack.' Personal tokens (hair, clothing, bazi chart) are buried in a dragon-lair site, absorbing heaven-earth energy to shift fortune. Believe it or not — skeptics need not apply."
       }
     },
     {
-      "@type": "Question",
-      "name": "Who is Sheng Ji suitable for?",
+      "@type":"Question",
+      "name":"Who is Sheng Ji suitable for?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Those with long-stagnant luck, career bottlenecks, weak health, or seeking children or marriage. Sheng Ji is not a magic wand — it adds points on top of your destiny chart: what your chart has, it hastens and magnifies; what it lacks, every bit of supplement counts."
+        "@type":"Answer",
+        "text":"Those with long-stagnant luck, career bottlenecks, weak health, or seeking children or marriage. Sheng Ji is not a magic wand — it adds points on top of your destiny chart: what your chart has, it hastens and magnifies; what it lacks, every bit of supplement counts."
       }
     },
     {
-      "@type": "Question",
-      "name": "What is the Sheng Ji process?",
+      "@type":"Question",
+      "name":"What is the Sheng Ji process?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Four steps: 1) Locate (find the dragon vein and true lair), 2) Date-select (an auspicious moment where heaven, earth, and human align), 3) Prepare tokens (hair, nails, worn clothing, bazi chart), 4) Burial ritual (Daoist liturgy: burial, stele, announcement to heaven and earth). Master Rain personally presides over the entire rite."
+        "@type":"Answer",
+        "text":"Four steps: 1) Locate (find the dragon vein and true lair), 2) Date-select (an auspicious moment where heaven, earth, and human align), 3) Prepare tokens (hair, nails, worn clothing, bazi chart), 4) Burial ritual (Daoist liturgy: burial, stele, announcement to heaven and earth). Master Rain personally presides over the entire rite."
       }
     },
     {
-      "@type": "Question",
-      "name": "How soon does it work, and how long does it last?",
+      "@type":"Question",
+      "name":"How soon does it work, and how long does it last?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Response is typically felt within 100 days; clear changes usually within a year. Duration depends on the site's energy and your own virtue — do good, and blessings run long. Good deeds after Sheng Ji resonate with heaven-earth qi."
+        "@type":"Answer",
+        "text":"Response is typically felt within 100 days; clear changes usually within a year. Duration depends on the site's energy and your own virtue — do good, and blessings run long. Good deeds after Sheng Ji resonate with heaven-earth qi."
       }
     }
   ]
@@ -121,7 +122,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <body>
 <canvas id="stars"></canvas><div class="nebula"></div>
 <nav>
-  <a class="brand" href="en-index.html"><span class="seal">潤澤</span><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
+  <a class="brand" href="en-index.html"><img src="logo-v2.png" alt="润泽" class="brand-logo"><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="menu">☰</button>
   <div class="nav-links"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-about.html">About</a><a href="en-contact.html">Book</a><a href="blog-shengji-wenda.html" class="lang-sw">中文</a></div>
 </nav>
@@ -132,12 +133,12 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
   <div class="byline rv">✦ By Master Rain ✦</div>
 </div><section><div class="dsec rv">
   <h2><span class="tick">✦</span>Introduction</h2>
-<p><strong class="pl">Sheng Ji (种生基, "planting the life foundation")</strong> is one of the most mysterious — and most sought-after — destiny methods in feng shui. Many have heard the name; few know what it actually is, how it's done, or whether it works.</p>
+<p><strong class="pl">Sheng Ji (种生基,"planting the life foundation")</strong> is one of the most mysterious — and most sought-after — destiny methods in feng shui. Many have heard the name; few know what it actually is, how it's done, or whether it works.</p>
 <p>Master Rain answers the most-asked questions in one place — after this article, you'll know more about Sheng Ji than 90% of people.</p>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>1. What Is Sheng Ji?</h2>
 <p>Simply: <strong>find an auspicious burial site for a living person, bury tokens representing them, and borrow the dragon lair's qi to shift fortune.</strong></p>
-<p>The old saying: "Bury the dead in a true dragon lair and descendants prosper; plant Sheng Ji for the living and fortune turns." Tokens typically include hair, nails, worn clothing, and the bazi chart. Once interred in a dragon-lair site, heaven-earth spiritual qi continuously nourishes the person — promoting <strong>career, wealth, nobility, health, and longevity</strong>.</p>
+<p>The old saying:"Bury the dead in a true dragon lair and descendants prosper; plant Sheng Ji for the living and fortune turns."Tokens typically include hair, nails, worn clothing, and the bazi chart. Once interred in a dragon-lair site, heaven-earth spiritual qi continuously nourishes the person — promoting <strong>career, wealth, nobility, health, and longevity</strong>.</p>
 <p>This is a millennium-old Daoist and feng shui method, used by emperors, generals, and magnates — not folklore.</p>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>2. The Key: The Site</h2>
@@ -149,7 +150,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>4. The Key: The Ritual</h2>
 <p>Burial isn't digging a hole. It follows <strong>Daoist liturgy</strong>: announcing to heaven, earth, mountains and rivers; trấn an (suppress-settle); erecting the stele; consecration… every rite in order. Wrong ritual, scattered qi.</p>
-<div class="dnote">Site, timing, ritual — all three indispensable. Many street "Sheng Ji" services charge without finding land, or bury tokens on any random hill — that's not Sheng Ji, that's burying stuff. Real skill saves wasted money.</div>
+<div class="dnote">Site, timing, ritual — all three indispensable. Many street"Sheng Ji"services charge without finding land, or bury tokens on any random hill — that's not Sheng Ji, that's burying stuff. Real skill saves wasted money.</div>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>FAQ</h2>
   <div class="faq-item"><h3>问：Q: Is Sheng Ji superstition?</h3><p>Sheng Ji is a destiny-improvement method passed down for a thousand years in Daoism and feng shui — used by emperors, generals, and tycoons across dynasties. The principle: 'borrow the earth's spiritual qi to supplement what you lack.' Personal tokens (hair, clothing, bazi chart) are buried in a dragon-lair site, absorbing heaven-earth energy to shift fortune. Believe it or not — skeptics need not apply.</p></div>
@@ -161,7 +162,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <footer>
 <div class="fnav"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-about.html">About</a><a href="en-pricing.html">Pricing</a><a href="en-contact.html">Contact</a></div>
 <a href="en-index.html" style="text-decoration:none"><div class="fbrand">RAIN FENGSHUI</div></a>
-<div>RAIN FENGSHUI · Effect Guaranteed</div>
+<div>RAIN FENGSHUI · Results Guaranteed</div>
 <div style="margin-top:10px">© 2026 rainfengshui.com</div>
 </footer>
 <script>

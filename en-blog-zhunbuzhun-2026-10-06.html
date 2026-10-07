@@ -24,7 +24,8 @@ body{background:var(--bg);color:var(--ink);font-family:'Cormorant Garamond','Not
 #stars{position:fixed;inset:0;z-index:-2}
 .nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
 nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);margin-left:6px}
+.brand-logo{width:46px;height:46px;object-fit:contain;flex-shrink:0}
 .seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;transform:rotate(-4deg)}
 .brand-name{font-size:19px;letter-spacing:.35em;font-weight:600}
 .brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
@@ -33,20 +34,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:
 .nav-links a:hover,.nav-links a.cur{color:var(--gold-lt)}
 .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-lt);font-size:22px;padding:6px 14px;border-radius:4px;cursor:pointer;font-family:inherit}
 @media(max-width:760px){
-  .menu-btn{display:block}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
-  .nav-links.open{display:flex}
-  .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
+ .menu-btn{display:block}
+ .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
+ .nav-links.open{display:flex}
+ .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
 }
 .page-hero{padding:170px 6vw 60px;text-align:center}
-.page-hero .eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
+.page-hero.eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
 .page-hero h1{font-size:clamp(28px,4.6vw,48px);font-weight:600;background:linear-gradient(175deg,#f7ecc8 20%,var(--gold-lt) 45%,var(--gold-dk) 75%,#f0d98a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px;line-height:1.4}
 .page-hero p{color:var(--muted);letter-spacing:.1em;font-size:16px}
 .byline{color:var(--gold);font-size:14px;letter-spacing:.3em;margin-top:16px}
 section{padding:60px 6vw;max-width:1000px;margin:0 auto}
 .dsec{margin-bottom:50px}
 .dsec h2{font-size:clamp(22px,3.2vw,30px);letter-spacing:.1em;color:var(--gold-lt);margin-bottom:20px;font-weight:600}
-.dsec h2 .tick{color:var(--gold-dk);margin-right:12px}
+.dsec h2.tick{color:var(--gold-dk);margin-right:12px}
 .dsec p{color:#fff;font-size:17px;margin-bottom:16px;line-height:1.95}
 .dsec p strong{color:#fff;font-weight:600}
 .dnote{border:1px solid var(--line);border-radius:6px;padding:22px 28px;background:rgba(201,162,39,.05);color:var(--muted);font-size:15px;margin-top:24px;line-height:1.9}
@@ -63,8 +64,8 @@ section{padding:60px 6vw;max-width:1000px;margin:0 auto}
 .backlink{display:block;text-align:center;margin:40px 0 10px;color:var(--muted);font-size:15px;letter-spacing:.25em}
 .backlink:hover{color:var(--gold-lt)}
 footer{border-top:1px solid var(--line);padding:44px 6vw;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:60px}
-footer .fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
-.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+footer.fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity.9s ease,transform.9s ease}
 .rv.on{opacity:1;transform:none}
 a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 .lang-sw{border:1px solid var(--gold);border-radius:4px;padding:4px 10px!important;color:var(--gold)!important;font-size:12px!important}
@@ -72,42 +73,42 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 .fnav{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:24px}
 .fnav a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.2em}
 .fnav a:hover{color:var(--gold-lt)}
-.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color .2s}.wx-copy:hover{color:var(--gold-lt)}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}</style>
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color.2s}.wx-copy:hover{color:var(--gold-lt)}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}</style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
   "mainEntity": [
     {
-      "@type": "Question",
-      "name": "Why do some feng shui consultants get results and others don't?",
+      "@type":"Question",
+      "name":"Why do some feng shui consultants get results and others don't?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The gap is in the practitioner, not in feng shui. Different lineages locate different wealth positions and read different things; different skill levels bring different field experience and adjustment methods. Same craft — one uses it masterfully, another wastes it."
+        "@type":"Answer",
+        "text":"The gap is in the practitioner, not in feng shui. Different lineages locate different wealth positions and read different things; different skill levels bring different field experience and adjustment methods. Same craft — one uses it masterfully, another wastes it."
       }
     },
     {
-      "@type": "Question",
-      "name": "What is a true wealth position?",
+      "@type":"Question",
+      "name":"What is a true wealth position?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Each room, each space has its own wealth position, and one space can hold several. Many schools calculate a wealth position from their own theory that isn't the real one — so the adjustment fails. Nearly a thousand years of Tianxing Feng Shui practice shows: only a wealth position measured by Tianxing methods is the true wealth position, and only adjustment on the true position produces real wealth activation."
+        "@type":"Answer",
+        "text":"Each room, each space has its own wealth position, and one space can hold several. Many schools calculate a wealth position from their own theory that isn't the real one — so the adjustment fails. Nearly a thousand years of Tianxing Feng Shui practice shows: only a wealth position measured by Tianxing methods is the true wealth position, and only adjustment on the true position produces real wealth activation."
       }
     },
     {
-      "@type": "Question",
-      "name": "How long does it take for a feng shui adjustment to work?",
+      "@type":"Question",
+      "name":"How long does it take for a feng shui adjustment to work?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For a home adjustment you'll feel the shift in one to three months; Sheng Ji life-base planting takes three to six months. What is guaranteed is results within three years. Promises of riches in seven days are theater."
+        "@type":"Answer",
+        "text":"For a home adjustment you'll feel the shift in one to three months; Sheng Ji life-base planting takes three to six months. What is guaranteed is results within three years. Promises of riches in seven days are theater."
       }
     },
     {
-      "@type": "Question",
-      "name": "Can I trust a consultant who claims 100% accuracy?",
+      "@type":"Question",
+      "name":"Can I trust a consultant who claims 100% accuracy?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Too many variables shape a person's life for anyone to be 100% accurate; anyone claiming 100% accuracy is a fraud. Getting the big picture right, most of the time, is what a master does — probabilities, not certainties."
+        "@type":"Answer",
+        "text":"No. Too many variables shape a person's life for anyone to be 100% accurate; anyone claiming 100% accuracy is a fraud. Getting the big picture right, most of the time, is what a master does — probabilities, not certainties."
       }
     }
   ]
@@ -117,7 +118,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <body>
 <canvas id="stars"></canvas><div class="nebula"></div>
 <nav>
-  <a class="brand" href="en-index.html"><span class="seal">潤澤</span><span class="brand-name">RAIN FENGSHUI<small>RAIN FENGSHUI</small></span></a>
+  <a class="brand" href="en-index.html"><img src="logo-v2.png" alt="润泽" class="brand-logo"><span class="brand-name">RAIN FENGSHUI<small>RAIN FENGSHUI</small></span></a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">☰</button>
   <div class="nav-links"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-about.html">About</a><a href="en-contact.html">Book</a><a href="blog-zhunbuzhun-2026-10-06.html" class="lang-sw">中文</a></div>
 </nav>
@@ -130,14 +131,14 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <section>
 <div class="dsec rv">
   <h2><span class="tick">✦</span>Let's Be Blunt</h2>
-  <p>Someone told me: "Master Rain, I hired a consultant once. Paid good money. Nothing changed. Does this stuff even work?"</p>
+  <p>Someone told me:"Master Rain, I hired a consultant once. Paid good money. Nothing changed. Does this stuff even work?"</p>
   <p>My answer: <strong>don't blame feng shui yet. Same craft, wildly different outcomes — the gap is lineage and skill.</strong></p>
   <p>Same scalpel: in a master surgeon's hand it saves lives; in a quack's hand it kills.</p>
 </div>
 
 <div class="dsec rv">
-  <h2><span class="tick">✦</span>Lineage Gap One: Is the "Wealth Position" They Found Even Real?</h2>
-  <p>Many schools calculate a "wealth position" from their own theory that simply isn't the real one — wrong spot, no result. That's not feng shui failing; that's the practitioner missing the target.</p>
+  <h2><span class="tick">✦</span>Lineage Gap One: Is the"Wealth Position"They Found Even Real?</h2>
+  <p>Many schools calculate a"wealth position"from their own theory that simply isn't the real one — wrong spot, no result. That's not feng shui failing; that's the practitioner missing the target.</p>
   <p>Nearly a thousand years of Tianxing Feng Shui practice tells us: <strong>only a wealth position measured by Tianxing methods is the true wealth position</strong>, and only adjustment there produces real wealth activation. Each room, each space has its own wealth position; one space can hold several. Find the true position and work it — that's what moves wealth.</p>
   <div class="dnote">Hiring someone for wealth activation? Ask one question: how do you locate the wealth position? If they can't explain their method, find someone else.</div>
 </div>
@@ -150,7 +151,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 
 <div class="dsec rv">
   <h2><span class="tick">✦</span>Craft Gap One: Field Experience, Not Book Knowledge</h2>
-  <p>Feng shui is a field discipline, not a memorization contest. Some "consultants" recite theory flawlessly and go blank on a real site.</p>
+  <p>Feng shui is a field discipline, not a memorization contest. Some"consultants"recite theory flawlessly and go blank on a real site.</p>
   <p>My teacher, Master Zhang Naiyi: <strong>fifty years of field practice, over a thousand cases</strong>. Our founder, Zhang Jiuyi: contract feng shui — work first, payment after results. Without real skill, who could survive a rule like that? I am the strongest of my teacher's hundred-plus disciples at locating dragon veins and burial sites. Craft can't be faked.</p>
 </div>
 
@@ -167,7 +168,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <div class="dsec rv">
   <h2><span class="tick">✦</span>Craft Gap Three: Honesty About Time</h2>
   <p>A home adjustment: <strong>you'll feel the shift in one to three months</strong>. Sheng Ji life-base planting: three to six months. What I promise is <strong>results within three years</strong> — the time to feel a change, not a fantasy.</p>
-  <p>Anyone promising "riches in seven days" — enjoy the show. And anyone claiming 100% accuracy is a fraud: too many variables shape a life. Getting the big picture right, most of the time, is what a master does. We read probabilities, not certainties.</p>
+  <p>Anyone promising"riches in seven days" — enjoy the show. And anyone claiming 100% accuracy is a fraud: too many variables shape a life. Getting the big picture right, most of the time, is what a master does. We read probabilities, not certainties.</p>
 </div>
 
 <div class="dsec rv">

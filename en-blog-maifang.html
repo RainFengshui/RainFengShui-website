@@ -24,7 +24,8 @@ body{background:var(--bg);color:var(--ink);font-family:'Noto Serif SC',serif;lin
 #stars{position:fixed;inset:0;z-index:-2}
 .nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
 nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);margin-left:6px}
+.brand-logo{width:46px;height:46px;object-fit:contain;flex-shrink:0}
 .seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;transform:rotate(-4deg)}
 .brand-name{font-size:19px;letter-spacing:.35em;font-weight:600}
 .brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
@@ -33,20 +34,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:
 .nav-links a:hover,.nav-links a.cur{color:var(--gold-lt)}
 .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-lt);font-size:22px;padding:6px 14px;border-radius:4px;cursor:pointer;font-family:inherit}
 @media(max-width:760px){
-  .menu-btn{display:block}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
-  .nav-links.open{display:flex}
-  .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
+ .menu-btn{display:block}
+ .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(7,7,14,.98);flex-direction:column;padding:24px 20px;gap:8px;text-align:center;border-bottom:1px solid var(--line);z-index:60}
+ .nav-links.open{display:flex}
+ .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
 }
 .page-hero{padding:170px 6vw 60px;text-align:center}
-.page-hero .eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
+.page-hero.eyebrow{color:var(--gold);letter-spacing:.55em;text-indent:.55em;font-size:13px;margin-bottom:18px}
 .page-hero h1{font-size:clamp(30px,5vw,52px);font-weight:900;letter-spacing:.12em;background:linear-gradient(175deg,#f7ecc8 20%,var(--gold-lt) 45%,var(--gold-dk) 75%,#f0d98a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px;line-height:1.5}
 .page-hero p{color:var(--muted);letter-spacing:.2em;font-size:15px}
 .byline{color:var(--gold);font-size:14px;letter-spacing:.3em;margin-top:16px}
 section{padding:60px 6vw;max-width:1000px;margin:0 auto}
 .dsec{margin-bottom:50px}
 .dsec h2{font-size:clamp(22px,3.2vw,30px);letter-spacing:.18em;color:var(--gold-lt);margin-bottom:20px;font-weight:700}
-.dsec h2 .tick{color:var(--gold-dk);margin-right:12px}
+.dsec h2.tick{color:var(--gold-dk);margin-right:12px}
 .dsec h3{font-size:19px;color:var(--gold-lt);letter-spacing:.12em;margin:26px 0 12px;font-weight:600}
 .dsec p{color:#fff;font-size:16px;margin-bottom:16px;line-height:2}
 .dsec p strong{color:#fff;font-weight:600}
@@ -66,8 +67,8 @@ section{padding:60px 6vw;max-width:1000px;margin:0 auto}
 .backlink{display:block;text-align:center;margin:40px 0 10px;color:var(--muted);font-size:15px;letter-spacing:.25em}
 .backlink:hover{color:var(--gold-lt)}
 footer{border-top:1px solid var(--line);padding:44px 6vw;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:60px}
-footer .fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
-.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+footer.fbrand{font-size:16px;color:var(--gold-lt);letter-spacing:.4em;margin-bottom:12px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity.9s ease,transform.9s ease}
 .rv.on{opacity:1;transform:none}
 a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 .lang-sw{border:1px solid var(--gold);border-radius:4px;padding:4px 10px!important;color:var(--gold)!important;font-size:12px!important}
@@ -76,42 +77,42 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 .fnav{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:24px}
 .fnav a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:.2em}
 .fnav a:hover{color:var(--gold-lt)}
-.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color .2s}.wx-copy:hover{color:var(--gold-lt)}.guarantee{color:#c0392b;font-weight:700}</style>
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color.2s}.wx-copy:hover{color:var(--gold-lt)}.guarantee{color:#c0392b;font-weight:700}</style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
   "mainEntity": [
     {
-      "@type": "Question",
-      "name": "Should I really check feng shui before buying a home?",
+      "@type":"Question",
+      "name":"Should I really check feng shui before buying a home?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A home is one of the biggest investments of your life — you'll live there for years or decades. Feng shui determines whether the space supports you or drains you. A pre-purchase assessment is the cheapest risk management: it helps you avoid homes with serious flaws (road rush, missing corners, rushing-through-qi)."
+        "@type":"Answer",
+        "text":"A home is one of the biggest investments of your life — you'll live there for years or decades. Feng shui determines whether the space supports you or drains you. A pre-purchase assessment is the cheapest risk management: it helps you avoid homes with serious flaws (road rush, missing corners, rushing-through-qi)."
       }
     },
     {
-      "@type": "Question",
-      "name": "I already bought the house and found feng shui problems. What now?",
+      "@type":"Question",
+      "name":"I already bought the house and found feng shui problems. What now?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most issues can be remedied through layout adjustments: a screen can cure rushing-through-qi, Taishan stones or plants can fill a missing corner, convex mirrors or qilin statues can block road rush. The key is an on-site diagnosis by a professional, then targeted remedies."
+        "@type":"Answer",
+        "text":"Most issues can be remedied through layout adjustments: a screen can cure rushing-through-qi, Taishan stones or plants can fill a missing corner, convex mirrors or qilin statues can block road rush. The key is an on-site diagnosis by a professional, then targeted remedies."
       }
     },
     {
-      "@type": "Question",
-      "name": "Can feng shui be assessed for pre-construction (off-plan) homes?",
+      "@type":"Question",
+      "name":"Can feng shui be assessed for pre-construction (off-plan) homes?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — and it should be. At the off-plan stage we read the community layout, building orientation, and floor plans. Catching problems early means you can still switch units or floors, far cheaper than renovating after move-in."
+        "@type":"Answer",
+        "text":"Yes — and it should be. At the off-plan stage we read the community layout, building orientation, and floor plans. Catching problems early means you can still switch units or floors, far cheaper than renovating after move-in."
       }
     },
     {
-      "@type": "Question",
-      "name": "Is American home feng shui different from Chinese?",
+      "@type":"Question",
+      "name":"Is American home feng shui different from Chinese?",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The principles are the same; the details differ. US single-family homes need driveway rush, backyard slope, and overhanging-tree checks; condos need elevator and lobby qi-mouth analysis. Master Rain has years of on-site experience with American architecture."
+        "@type":"Answer",
+        "text":"The principles are the same; the details differ. US single-family homes need driveway rush, backyard slope, and overhanging-tree checks; condos need elevator and lobby qi-mouth analysis. Master Rain has years of on-site experience with American architecture."
       }
     }
   ]
@@ -121,7 +122,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <body>
 <canvas id="stars"></canvas><div class="nebula"></div>
 <nav>
-  <a class="brand" href="en-index.html"><span class="seal">潤澤</span><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
+  <a class="brand" href="en-index.html"><img src="logo-v2.png" alt="润泽" class="brand-logo"><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="menu">☰</button>
   <div class="nav-links"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-about.html">About</a><a href="en-contact.html">Book</a><a href="blog-maifang.html" class="lang-sw">中文</a></div>
 </nav>
@@ -142,10 +143,10 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <p>When a road or river curves with its bow-back facing the house, it's called <strong>"reverse bow" (反弓煞)</strong> — associated with wealth loss, lawsuits, and family discord. The opposite, a road embracing the house like a jade belt, is auspicious.</p>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>3. Check the Facing Direction</h2>
-<p>The main door is the home's qi mouth, but its facing <strong>cannot be judged by direction alone</strong> — it must be determined by the external environment: are there mountains, water, roads, trees, towers, or tall buildings outside? Which way does the water come and go? Does the road embrace or stab back? These <strong>landform features (峦头)</strong> are the true basis for setting a door's facing. Judging by "south is always good" or "East-group people need East-group houses" is armchair theory that fails in real practice.</p>
+<p>The main door is the home's qi mouth, but its facing <strong>cannot be judged by direction alone</strong> — it must be determined by the external environment: are there mountains, water, roads, trees, towers, or tall buildings outside? Which way does the water come and go? Does the road embrace or stab back? These <strong>landform features (峦头)</strong> are the true basis for setting a door's facing. Judging by"south is always good"or"East-group people need East-group houses"is armchair theory that fails in real practice.</p>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>4. Avoid Rushing-Through Qi</h2>
-<p>When the front door aligns straight through to the balcony or back door with nothing in between, wealth qi "rushes straight through" and can't settle — <strong>"rushing-through qi" (穿堂煞)</strong>. These layouts leak money badly. Test it at viewing: stand at the door — can you see straight out the balcony?</p>
+<p>When the front door aligns straight through to the balcony or back door with nothing in between, wealth qi"rushes straight through"and can't settle — <strong>"rushing-through qi" (穿堂煞)</strong>. These layouts leak money badly. Test it at viewing: stand at the door — can you see straight out the balcony?</p>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>5. Prefer Square Layouts</h2>
 <p>A <strong>square, regular floor plan</strong> is ideal. A missing corner means missing fortune in that direction: missing northwest hurts the breadwinner's career, missing southwest hurts the matriarch's health, missing east affects the eldest son. A corner missing more than a third of the side is serious — think twice.</p>
@@ -154,13 +155,13 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <p>Exposed beams directly above the bed head, sofa, or desk press down on you long-term: poor sleep, mental pressure, career suppression. Best concealed by renovation; otherwise avoid placing key furniture under them.</p>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>7. Kitchen & Bathroom Placement</h2>
-<p>The kitchen (fire element) is one of the home's "wealth vaults" and belongs in an auspicious sector; bathrooms (water, unclean) <strong>must never sit at the house center (the central palace)</strong> — the taiji point. Filth pressing the center drags down the whole family's fortune and health. On any floor plan, locate the bathrooms first.</p>
+<p>The kitchen (fire element) is one of the home's"wealth vaults"and belongs in an auspicious sector; bathrooms (water, unclean) <strong>must never sit at the house center (the central palace)</strong> — the taiji point. Filth pressing the center drags down the whole family's fortune and health. On any floor plan, locate the bathrooms first.</p>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>8. Light and Ventilation</h2>
 <p>Feng shui is about qi, and qi rides on light and air. A perpetually dark, damp home accumulates yin energy — residents feel drained and wealth stalls. <strong>Always view in daylight</strong> and feel whether natural light reaches the living room and bedrooms.</p>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>9. Survey the Surroundings</h2>
-<p>Within ~300 meters: any high-voltage towers, substations, landfills, hospitals, funeral homes, gas stations? These are "form sha" harming health and mood. Even a nice community deserves a look at what's right across the street.</p>
+<p>Within ~300 meters: any high-voltage towers, substations, landfills, hospitals, funeral homes, gas stations? These are"form sha"harming health and mood. Even a nice community deserves a look at what's right across the street.</p>
 </div><div class="dsec rv">
   <h2><span class="tick">✦</span>10. Trust Your First Feeling</h2>
 <p>The last tip is the most subtle — and the most accurate: <strong>your first feeling walking in.</strong> Comfortable, bright, reluctant to leave? The qi likely suits you. Oppressed, chilly, eager to leave? Think thrice no matter the price. Intuition is the body's honest response to qi.</p>
@@ -177,7 +178,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <footer>
 <div class="fnav"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-about.html">About</a><a href="en-pricing.html">Pricing</a><a href="en-contact.html">Contact</a></div>
 <a href="en-index.html" style="text-decoration:none"><div class="fbrand">RAIN FENGSHUI</div></a>
-<div>RAIN FENGSHUI · Effect Guaranteed</div>
+<div>RAIN FENGSHUI · Results Guaranteed</div>
 <div style="margin-top:10px">© 2026 rainfengshui.com</div>
 </footer>
 <script>

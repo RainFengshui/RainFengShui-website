@@ -24,7 +24,8 @@ body{background:var(--bg);color:var(--ink);font-family:'Noto Serif SC',serif;lin
 #stars{position:fixed;inset:0;z-index:-2}
 .nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
 nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);margin-left:6px}
+.brand-logo{width:46px;height:46px;object-fit:contain;flex-shrink:0}
 .seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;transform:rotate(-4deg)}
 .brand-name{font-size:19px;letter-spacing:.35em;font-weight:600}
 .brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
@@ -72,7 +73,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <body>
 <canvas id="stars"></canvas><div class="nebula"></div>
 <nav>
-  <a class="brand" href="index.html"><span class="seal">潤澤</span><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
+  <a class="brand" href="index.html"><img src="logo-v2.png" alt="润泽" class="brand-logo"><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="菜单">☰</button>
   <div class="nav-links"><a href="index.html">首页</a><a href="services.html">服务</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a><a href="en-carrollton.html" class="lang-sw">EN</a></div>
 </nav>
@@ -89,7 +90,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
   </div>
   <div class="story-box rv">
     <h2>如何预约卡罗尔顿专程服务</h2>
-    <p>润泽先生常驻湾区，卡罗尔顿及周边地区采取<strong>预约制专程前往</strong>：</p>
+    <p>润泽先生上门服务、实地勘测，卡罗尔顿及周边地区<strong>提前预约安排行程</strong>：</p>
     <p>1. 先通过电话或微信联系，说明您的需求<br>2. 双方商定行程时间（通常需<strong>提前2-4周预约</strong>）<br>3. 先生专程飞抵卡罗尔顿，上门实地察看<br>4. 现场断事、现场调理，效果当场验证</p>
     <p>多人同行程可拼单分摊差旅，欢迎卡罗尔顿华人社团、商会组团预约。</p>
   </div>

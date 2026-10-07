@@ -24,7 +24,8 @@ body{background:var(--bg);color:var(--ink);font-family:'Noto Serif SC',serif;lin
 #stars{position:fixed;inset:0;z-index:-2}
 .nebula{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 15% 10%,rgba(60,40,120,.14),transparent 70%),radial-gradient(ellipse 50% 35% at 85% 80%,rgba(140,90,30,.10),transparent 70%)}
 nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:linear-gradient(to bottom,rgba(7,7,14,.92),rgba(7,7,14,0));backdrop-filter:blur(6px)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);margin-left:6px}
+.brand-logo{width:46px;height:46px;object-fit:contain;flex-shrink:0}
 .seal{width:42px;height:42px;background:var(--red);color:#f5ecd8;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;border-radius:4px;box-shadow:0 0 18px rgba(168,50,50,.45);transform:rotate(-4deg)}
 .brand-name{font-size:19px;letter-spacing:.35em;font-weight:600}
 .brand-name small{display:block;font-size:10px;letter-spacing:.5em;color:var(--muted);font-weight:300}
@@ -133,7 +134,7 @@ h2 .tick{color:#e74c3c!important}
 <body>
 <canvas id="stars"></canvas><div class="nebula"></div>
 <nav>
-  <a class="brand" href="index.html"><span class="seal">潤澤</span><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
+  <a class="brand" href="index.html"><img src="logo-v2.png" alt="润泽" class="brand-logo"><span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span></a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="菜单">☰</button>
   <div class="nav-links"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html">博客</a><a href="faq.html">问答</a><a href="about.html" class="cur">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a><a href="en-about.html" class="lang-sw">EN</a></div>
 </nav>
@@ -155,8 +156,8 @@ h2 .tick{color:#e74c3c!important}
   <p class="rv"><strong style="color:#e8c86a">成也风水：</strong>我早年在美国做房地产投资，住的房子阳宅风水极好。短短几年，从白手起家到实现财富自由。那时的我并不懂风水，只觉得运气好。</p>
   <p class="rv"><strong style="color:#e8c86a">败也风水：</strong>后来，我搬进了一套豪宅——更大、更贵、更气派。住了两年，家庭财富却蒙受巨大损失（几百万美金）。那时我才惊醒：不是我不行了，是房子的风水不对。</p>
   <p class="rv">这一次惨痛的经历，让我萌发了一个念头：<strong>风水，到底对人的命运有多大影响？</strong></p>
-  <p class="rv"><strong style="color:#e8c86a">拜师求道：</strong>我拿出当年考国内名校、读美国博士的那股劲，回国遍访明师，拜多位高人为师——特别是拜<strong>张九仪第六代传承人张乃懿先生</strong>门下，行正式拜师礼。几年下来，系统研习<strong>命理测算、阴阳宅风水、占卜术数、法术奇门</strong>，深得天星风水精髓。师父门下弟子上百，而我在<strong>寻龙点穴</strong>上造诣最深，为<strong>种生基</strong>打下坚实根基。</p>
-  <p class="rv"><strong style="color:#e8c86a">实战验证：</strong>取得真经之后，我先拿自家开刀——找到了自家<strong>阴阳宅风水的症结所在</strong>，逐一处理改正；并亲自登山<strong>寻龙点穴</strong>，找到多处风水宝地，<strong>种了生基</strong>，亲眼目睹见证了<strong>天地感应</strong>事件，感叹大自然之神奇奥秘无穷（YouTube上有多个作品展示）。没多久，个人运势、家庭运势<strong>明显逆转</strong>。这一次，我彻底服了：真东西，管用。</p>
+  <p class="rv"><strong style="color:#e8c86a">拜师求道：</strong>我拿出当年考国内名校、读美国博士的那股劲，回国遍访明师，拜多位高人为师——特别是拜<strong>张九仪第六代传承人张乃懿先生</strong>门下，行正式拜师礼。几年下来，系统研习<strong>命理测算、阴阳宅风水、占卜术数、法术奇门</strong>，深得天星风水精髓——天星风水是风水学皇冠上的明珠，最厉害效果最灵验的顶级风水技术。师父门下弟子上百，而我在<strong>寻龙点穴</strong>上造诣最深，为<strong>种生基</strong>打下坚实根基。</p>
+  <p class="rv"><strong style="color:#e8c86a">实战验证：</strong>取得真经之后，我先拿自家开刀——找到了自家<strong>阴阳宅风水的症结所在</strong>，逐一处理改正；并亲自登山<strong>寻龙点穴</strong>，找到多处风水宝地，<strong>种了生基</strong>，亲眼见证了<strong>天地感应</strong>事件，感叹大自然之神奇奥秘无穷（YouTube上有多个作品展示）。没多久，个人运势、家庭运势<strong>明显逆转</strong>。这一次，我彻底服了：真东西，管用。</p>
   <p class="rv"><strong style="color:#e8c86a">回美立业：</strong>学成之后，我回到美国，成立了润泽天星风水工作室——<strong>用科学家的严谨，做传统风水的实战派</strong>。作为精通英语、深谙中西文化的高知人士，面向全球200多个国家和地区、特别是美国市场，提供综合性、硬核的私人定制风水咨询与服务。我的身后，汇聚着上百位奇人异士，为你解决各个层级的问题和难题。</p>
 </section>
 
@@ -169,7 +170,7 @@ h2 .tick{color:#e74c3c!important}
     <span class="arr">→</span><span style="color:var(--muted)">五代传承</span><span class="arr">→</span>
     <div class="node"><strong style="color:#ffd700;font-size:1.1em">张乃懿先生</strong><br><small>第六代传人 · 易学集大成者 · 易学宗师<br>数十部易学著作</small></div>
     <span class="arr">→</span>
-    <div class="node" style="border-color:var(--red)"><strong style="color:#ffd700;font-size:1.1em">润泽先生</strong><br><small>第七代传人 · 号灵泽子<br>天星风水、命理测算、法术奇门、占卜术数集大成者</small></div>
+    <div class="node" style="border-color:var(--red)"><strong style="color:#ffd700;font-size:1.1em">润泽先生</strong><br><small>第七代传人 · 擅长寻龙点穴种生基 · 易学集大成者<br>天星风水、命理测算、法术奇门、占卜术数集大成者</small></div>
   </div>
     <div class="photo-wall">
     <div class="ph-img"><img src="baishi-1.jpg" alt="拜师仪式合影"><div class="ph-cap">拜师仪式合影</div></div>
@@ -179,7 +180,6 @@ h2 .tick{color:#e74c3c!important}
     <div class="ph-img"><img src="baishi-5.jpg" alt="与师父聚餐"><div class="ph-cap">与师父聚餐 · 殊荣</div></div>
     <div class="ph-img"><img src="baishi-6.jpg" alt="师徒合影"><div class="ph-cap">师徒情深</div></div>
   </div>
-  <p style="text-align:center;color:var(--muted);font-size:13px;letter-spacing:.15em">拜师学艺 · 师徒情深</p>
   <p class="rv" style="text-align:center;color:var(--muted);font-size:13px;letter-spacing:.15em">拜师学艺 · 师徒情深</p>
 </section>
 
