@@ -615,7 +615,7 @@ function sendEmail(){
   var body=document.getElementById('mBody').value.trim();
   if(!name||!body){alert('请填写姓名和咨询内容');return}
   var fullBody='姓名：'+name+'\n'+(phone?'电话：'+phone+'\n':'')+'\n'+body;
-  window.location.href='mailto:<span style="white-space:nowrap">RainFengShui@yahoo.com</span>?subject='+encodeURIComponent('【网站咨询】'+subject)+'&body='+encodeURIComponent(fullBody);
+  window.location.href='mailto:RainFengShui@yahoo.com?subject='+encodeURIComponent('【网站咨询】'+subject)+'&body='+encodeURIComponent(fullBody);
   closeEmailModal();
 }
 </script>

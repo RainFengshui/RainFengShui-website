@@ -233,7 +233,7 @@ function sendEmail(){
   if(!name||!body){alert('请填写姓名和咨询内容');return}
   var btn=document.querySelector('.modal-send');
   btn.textContent='发送中...';btn.disabled=true;
-  fetch('https://formsubmit.co/ajax/<span style="white-space:nowrap">RainFengShui@yahoo.com</span>',{
+  fetch('https://formsubmit.co/ajax/RainFengShui@yahoo.com',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify({
@@ -251,7 +251,7 @@ function sendEmail(){
     document.getElementById('mSubject').value='';
     document.getElementById('mBody').value='';
   }).catch(function(){
-    alert('发送失败，请直接发邮件到 <span style="white-space:nowrap">RainFengShui@yahoo.com</span> 或微信联系。');
+    alert('发送失败，请直接发邮件到 RainFengShui@yahoo.com 或微信联系。');
   }).finally(function(){
     btn.textContent='发送邮件';btn.disabled=false;
   });

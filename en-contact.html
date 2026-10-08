@@ -225,7 +225,7 @@ function sendEmail(){
   if(!name||!body){alert('Please fill in your name and message');return}
   var btn=document.querySelector('.modal-send');
   btn.textContent='Sending...';btn.disabled=true;
-  fetch('https://formsubmit.co/ajax/<span style="white-space:nowrap">RainFengShui@yahoo.com</span>',{
+  fetch('https://formsubmit.co/ajax/RainFengShui@yahoo.com',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify({
@@ -243,7 +243,7 @@ function sendEmail(){
     document.getElementById('mSubject').value='';
     document.getElementById('mBody').value='';
   }).catch(function(){
-    alert('Failed. Please email <span style="white-space:nowrap">RainFengShui@yahoo.com</span> directly.');
+    alert('Failed. Please email RainFengShui@yahoo.com directly.');
   }).finally(function(){
     btn.textContent='Send Email';btn.disabled=false;
   });
