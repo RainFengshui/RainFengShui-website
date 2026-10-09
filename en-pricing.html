@@ -41,8 +41,9 @@ main{max-width:1000px;margin:0 auto;padding:0 6vw 80px}
 .ptable{width:100%;border-collapse:collapse;font-size:15px}
 .ptable th{background:rgba(201,162,39,.08);color:var(--gold);text-align:left;padding:12px 16px;letter-spacing:.06em;border-bottom:1px solid var(--line)}
 .ptable td{color:#fff;padding:12px 16px;border-bottom:1px solid rgba(201,162,39,.1);vertical-align:top}
-.ptable td.price{color:#fff;font-weight:700;white-space:nowrap;text-align:right}
-.ptable td.note{color:var(--muted);font-size:13px}
+.ptable td.price{color:#fff;font-weight:700;white-space:nowrap;text-align:right;padding-left:8px;width:22%}
+.ptable td.note{color:var(--muted);font-size:13px;width:33%}
+.ptable td:first-child{width:45%}
 .ptable tr:hover td{background:rgba(201,162,39,.04)}
 .guarantee{background:linear-gradient(170deg,rgba(192,57,43,.1),transparent 60%),var(--bg2);border:1px solid rgba(192,57,43,.4);border-radius:8px;padding:36px;text-align:center;margin:50px 0}
 .guarantee h3{color:var(--gold-lt);font-size:22px;letter-spacing:.06em;margin-bottom:12px}
@@ -66,12 +67,22 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 .svc-link:hover{color:var(--gold-lt)}
 .setup-note{background:rgba(214,69,51,.08);border:1px solid rgba(214,69,51,.3);border-radius:6px;padding:14px 20px;margin:16px 0;font-size:14px;color:#fff}
 .setup-note strong{color:#fff}
-.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color.2s;white-space:nowrap}.wx-copy:hover{color:var(--gold-lt)}.guarantee{color:#c0392b;font-weight:700}</style>
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color.2s;white-space:nowrap}.wx-copy:hover{color:var(--gold-lt)}.guarantee{color:#c0392b;font-weight:700}
+.contact-rows{display:inline-block;text-align:left;margin:10px auto 0;line-height:2.3}
+.crow{white-space:nowrap}
+.clabel{display:inline-block;width:4.6em;color:var(--muted)}
+.clabel-w{display:inline-block;width:10em;color:var(--muted)}
+.clabel-en{display:inline-block;width:6em;color:var(--muted)}
+.cval{color:var(--gold-lt);font-weight:600}
+.cval-ul{color:var(--gold-lt);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.cemo{display:inline-block;width:1.9em}
+.onsite-note{margin-top:18px !important}
+</style>
 </head>
 <body>
 <canvas id="stars"></canvas><div class="nebula"></div>
 <nav>
-  <a class="brand" href="en-index.html"><img src="logo-v4.png" alt="润泽" class="brand-logo"><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
+  <a class="brand" href="en-index.html"><img src="logo-v4.png" alt="润泽天星风水" class="brand-logo"><span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span></a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">☰</button>
   <div class="nav-links"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-faq.html">FAQ</a><a href="en-about.html">About</a><a href="en-pricing.html" class="cur">Pricing</a><a href="en-contact.html">Contact</a><a href="pricing.html" class="lang-sw">中文</a></div>
 </nav>
@@ -94,7 +105,7 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 <tr><td><a href="en-svc-bazi-gemstone-bracelet.html" class="svc-link">Custom gemstone bracelet (bazi-based)</a></td><td class="price">$2,000</td></tr>
 </table></div>
 <div class="cat rv"><h2><span class="tick">✦</span>Yin & Yang House Feng Shui</h2><p class="desc">Results guaranteed, 3 years, full refund · On-site only</p>
-<div class="setup-note">📌 <strong>Set Up Fee (non-refundable):</strong> Local $500 · Remote $1000<br>Click each item for details and work scope</div>
+<div class="setup-note">✈️ Travel and accommodation covered by the client</div>
 <table class="ptable"><tr><th>Service</th><th style="text-align:right">Price</th></tr>
 <tr><td><a href="en-svc-yangzhai-tune-home.html" class="svc-link">Home feng shui adjustment</a></td><td class="price">$2/sqft</td></tr>
 <tr><td><a href="en-svc-yangzhai-tune-office.html" class="svc-link">Office feng shui adjustment</a></td><td class="price">$2/sqft</td></tr>
@@ -155,14 +166,17 @@ a,a:link,a:visited{color:#e8dcc0;text-decoration:none}a:hover{color:#e8c86a}
 </div>
 <div class="cta-box rv">
 <h2>Book a Consultation</h2>
-<p>Email: <a href="mailto:RainFengShui@yahoo.com" style="color:var(--gold-lt);font-weight:600">RainFengShui@yahoo.com</a></p>
-<p>WeChat ID: <span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span> · Phone: <a href="tel:6502480529" style="color:var(--gold-lt);font-weight:600"><span style="white-space:nowrap">650-248-0529</span></a></p>
-<p>On-site only · No remote video readings</p>
+<div class="contact-rows">
+<div class="crow"><span class="clabel-en">Email:</span><a class="cval" href="mailto:RainFengShui@yahoo.com">RainFengShui@yahoo.com</a></div>
+<div class="crow"><span class="clabel-en">WeChat ID:</span><span class="wx-copy cval" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span></div>
+<div class="crow"><span class="clabel-en">Phone:</span><a class="cval" href="tel:6502480529"><span style="white-space:nowrap">650-248-0529</span></a></div>
+</div>
+<p class="onsite-note">On-site only · No remote video readings</p>
 <a class="btn" href="en-contact.html">Book Now</a>
 </div>
 </main>
 <footer>
-<div class="fnav"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-about.html">About</a><a href="en-pricing.html">Pricing</a><a href="en-contact.html">Contact</a></div>
+<div class="fnav"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-faq.html">FAQ</a><a href="en-about.html">About</a><a href="en-pricing.html">Pricing</a><a href="en-contact.html">Contact</a></div>
 <a href="en-index.html" style="text-decoration:none"><div class="fbrand">RAIN FENGSHUI</div></a>
 <div>RAIN FENGSHUI · Results Guaranteed</div>
 <div style="margin-top:10px">© 2026 rainfengshui.com</div>
@@ -186,7 +200,7 @@ function copyWechat(el){var t=el.getAttribute('data-copy');function done(){var s
 .brand-logo{cursor:pointer}
 </style>
 <div class="logo-zoom-modal" id="logoZoomModal" onclick="this.classList.remove('active')">
-<img src="logo-v4.png" alt="润泽logo">
+<img src="logo-v4.png" alt="润泽天星风水logo">
 </div>
 <script>
 document.addEventListener("DOMContentLoaded",function(){
