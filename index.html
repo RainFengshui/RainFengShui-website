@@ -240,7 +240,7 @@ section{padding:110px 6vw;max-width:1200px;margin:0 auto;position:relative}
 }
 .final h2{font-size:clamp(28px,4.5vw,44px);letter-spacing:.18em;margin-bottom:18px}
 .final p{color:var(--muted);margin-bottom:36px;letter-spacing:.1em}
-.contact-line{margin-top:34px;color:var(--muted);font-size:14.5px;letter-spacing:.12em;line-height:2.4}
+.contact-line{margin:34px auto 0;width:fit-content;text-align:left;color:var(--muted);font-size:14.5px;letter-spacing:.12em;line-height:2.4}
 .contact-line b{color:var(--gold-lt);font-weight:600}
 /* footer */
 footer{
@@ -309,7 +309,18 @@ h2 .tick{color:#e74c3c!important}
 .modal-input::placeholder{color:var(--muted)}
 textarea.modal-input{resize:vertical}
 .modal-send{width:100%;margin-top:6px;padding:15px 20px;font-size:16px;letter-spacing:.3em;text-indent:.3em;cursor:pointer;border:none;border-radius:4px}
-.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color .2s;white-space:nowrap}.wx-copy:hover{color:var(--gold-lt)}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}</style>
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color .2s;white-space:nowrap}.wx-copy:hover{color:var(--gold-lt)}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}
+.contact-rows{display:inline-block;text-align:left;margin:10px auto 0;line-height:2.3}
+.crow{white-space:nowrap}
+.clabel{display:inline-block;width:4.6em;color:var(--muted)}
+.clabel-w{display:inline-block;width:10em;color:var(--muted)}
+.clabel-en{display:inline-block;width:6em;color:var(--muted)}
+.cval{color:var(--gold-lt);font-weight:600}
+.cval-ul{color:var(--gold-lt);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.cemo{display:inline-block;width:1.9em}
+.onsite-note{margin-top:18px !important}
+@media(max-width:360px){.clabel-w{width:8em}.clabel-ew{width:8em}.cemo{width:1.6em}}
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -317,8 +328,10 @@ textarea.modal-input{resize:vertical}
   "name": "润泽天星风水",
   "alternateName": "Rain Star Feng Shui",
   "description": "张九仪第七代传人润泽先生，命理测算、阴阳宅风水、种生基、法术奇门。坚持实地察看，效果保证·无效退款。",
-  "telephone": "+1-<span style="white-space:nowrap">650-248-0529</span>",
+  "telephone": "+1-650-248-0529",
   "url": "https://rainfengshui.com",
+  "logo": "https://rainfengshui.com/logo-v4.png",
+  "image": "https://rainfengshui.com/logo-v4.png",
   "priceRange": "$$$",
   "areaServed": {
     "@type": "Country",
@@ -339,7 +352,7 @@ textarea.modal-input{resize:vertical}
 
 <nav>
   <a class="brand" href="#top">
-    <img src="logo-v4.png" alt="润泽" class="brand-logo">
+    <img src="logo-v4.png" alt="润泽天星风水" class="brand-logo">
     <span class="brand-name">润泽天星风水<small>RAIN FENGSHUI</small></span>
   </a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="菜单">☰</button>
@@ -446,7 +459,7 @@ textarea.modal-input{resize:vertical}
     <div class="ornament">✦ ✦ ✦</div>
     <p style="color:#fff;max-width:640px;margin:0 auto">润泽先生拜张九仪第六代传人<strong style="color:#fff">张乃懿先生</strong>门下，行正式拜师礼，得天星风水真传。</p>
     <div class="lineage-chain">
-      <span class="chain-node"><strong style="color:#ffd700;font-size:1.1em">张九仪 · 第一代</strong><br><small style="color:var(--muted)">赖布衣嫡传 · 天星风水一代宗师<br>清初国师 · 契约风水祖师</small></span>
+      <span class="chain-node"><strong style="color:#ffd700;font-size:1.1em">张九仪祖师</strong><br><small style="color:var(--muted)">赖布衣嫡传 · 天星风水一代宗师<br>清初国师 · 契约风水祖师</small></span>
       <span class="chain-arrow">→</span>
       <span style="color:var(--muted)">…五代传承…</span>
       <span class="chain-arrow">→</span>
@@ -531,18 +544,18 @@ textarea.modal-input{resize:vertical}
     <img src="wechat-qr.jpg" alt="润泽先生微信二维码" style="width:170px;border-radius:8px;border:1px solid var(--line);box-shadow:0 8px 40px rgba(0,0,0,.5)">
     <p style="color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:12px">扫码加微信 · 风生水起</p>
   </div>
-  <div class="contact-line" style="text-align:left;padding-left:20px">
-    📧 <a href="javascript:openEmailModal()" style="text-decoration:underline;text-underline-offset:3px"><b>RainFengShui@yahoo.com</b></a><br>
-    💬 微信号：<b><span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span></b><br>
-    📞 电话：<b><span style="white-space:nowrap">650-248-0529</span></b><br>
-    ▶️ YouTube视频号：<b><a href="https://www.youtube.com/@RainFengShui" target="_blank" rel="noopener" style="color:var(--gold-lt)">RainFengShui</a></b><br>
-    📸 Instagram：<b><a href="https://www.instagram.com/rainfengshui" target="_blank" rel="noopener" style="color:var(--gold-lt)"><span style="white-space:nowrap">@RainFengShui</span></a></b><br>
-    📺 微信视频号：<b>润泽天星风水</b>
+  <div class="contact-line">
+<div class="crow"><span class="cemo">📧</span><span class="clabel-w"></span><a class="cval-ul" href="javascript:openEmailModal()">RainFengShui@yahoo.com</a></div>
+<div class="crow"><span class="cemo">💬</span><span class="clabel-w">微信号：</span><span class="wx-copy cval" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span></div>
+<div class="crow"><span class="cemo">📞</span><span class="clabel-w">电话：</span><a class="cval" href="tel:6502480529"><span style="white-space:nowrap">650-248-0529</span></a></div>
+<div class="crow"><span class="cemo">▶️</span><span class="clabel-w">YouTube视频号：</span><a class="cval" href="https://www.youtube.com/@RainFengShui" target="_blank" rel="noopener">RainFengShui</a></div>
+<div class="crow"><span class="cemo">📸</span><span class="clabel-w">Instagram：</span><a class="cval" href="https://www.instagram.com/rainfengshui" target="_blank" rel="noopener"><span style="white-space:nowrap">@RainFengShui</span></a></div>
+<div class="crow"><span class="cemo">📺</span><span class="clabel-w">微信视频号：</span><span class="cval">润泽天星风水</span></div>
   </div>
 </div>
 
 <footer>
-<div class="fnav"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html">博客</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a></div>
+<div class="fnav"><a href="index.html">首页</a><a href="services.html">服务</a><a href="blog.html">博客</a><a href="faq.html">问答</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a></div>
   <a href="index.html" style="text-decoration:none"><div class="fbrand">润泽天星风水</div></a>
   <div>RAIN FENGSHUI · <span class="guarantee">效果保证·无效退款</span></div>
   <div style="margin-top:10px">© 2026 rainfengshui.com</div>
@@ -659,7 +672,7 @@ function closePromo(){
 .brand-logo{cursor:pointer}
 </style>
 <div class="logo-zoom-modal" id="logoZoomModal" onclick="this.classList.remove('active')">
-<img src="logo-v4.png" alt="润泽logo">
+<img src="logo-v4.png" alt="润泽天星风水logo">
 </div>
 <script>
 document.addEventListener("DOMContentLoaded",function(){
