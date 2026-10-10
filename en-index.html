@@ -237,7 +237,7 @@ section{padding:110px 6vw;max-width:1200px;margin:0 auto;position:relative}
 }
 .final h2{font-size:clamp(28px,4.5vw,44px);letter-spacing:.18em;margin-bottom:18px}
 .final p{color:var(--muted);margin-bottom:36px;letter-spacing:.1em}
-.contact-line{margin-top:34px;color:var(--muted);font-size:14.5px;letter-spacing:.12em;line-height:2.4}
+.contact-line{margin:34px auto 0;width:fit-content;text-align:left;color:var(--muted);font-size:14.5px;letter-spacing:.12em;line-height:2.4}
 .contact-line b{color:var(--gold-lt);font-weight:600}
 /* footer */
 footer{
@@ -306,7 +306,19 @@ h2.tick{color:#e74c3c!important}
 .modal-input::placeholder{color:var(--muted)}
 textarea.modal-input{resize:vertical}
 .modal-send{width:100%;margin-top:6px;padding:15px 20px;font-size:16px;letter-spacing:.3em;text-indent:.3em;cursor:pointer;border:none;border-radius:4px}
-.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color.2s;white-space:nowrap}.wx-copy:hover{color:var(--gold-lt)}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}</style>
+.wx-copy{cursor:pointer;border-bottom:1px dotted var(--gold);transition:color.2s;white-space:nowrap}.wx-copy:hover{color:var(--gold-lt)}.pl{color:var(--gold-lt)!important;font-weight:600}.guarantee{color:#c0392b;font-weight:700}
+.contact-rows{display:inline-block;text-align:left;margin:10px auto 0;line-height:2.3}
+.crow{white-space:nowrap}
+.clabel{display:inline-block;width:4.6em;color:var(--muted)}
+.clabel-w{display:inline-block;width:10em;color:var(--muted)}
+.clabel-en{display:inline-block;width:6em;color:var(--muted)}
+.clabel-ew{display:inline-block;width:8.5em;color:var(--muted)}
+.cval{color:var(--gold-lt);font-weight:600}
+.cval-ul{color:var(--gold-lt);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.cemo{display:inline-block;width:1.9em}
+.onsite-note{margin-top:18px !important}
+@media(max-width:360px){.clabel-w{width:8em}.clabel-ew{width:8em}.cemo{width:1.6em}}
+</style>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -336,7 +348,7 @@ textarea.modal-input{resize:vertical}
 
 <nav>
   <a class="brand" href="#top">
-    <img src="logo-v4.png" alt="润泽" class="brand-logo">
+    <img src="logo-v4.png" alt="润泽天星风水" class="brand-logo">
     <span class="brand-name">Rain Fengshui<small>RAIN FENGSHUI</small></span>
   </a>
   <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">☰</button>
@@ -527,18 +539,18 @@ textarea.modal-input{resize:vertical}
     <img src="wechat-qr.jpg" alt="Master Rain's WeChat QR code" style="width:170px;border-radius:8px;border:1px solid var(--line);box-shadow:0 8px 40px rgba(0,0,0,.5)">
     <p style="color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:12px">Scan to Add on WeChat</p>
   </div>
-  <div class="contact-line" style="text-align:left;padding-left:20px">
-    📧 <a href="javascript:openEmailModal()" style="text-decoration:underline;text-underline-offset:3px"><b>RainFengShui@yahoo.com</b></a><br>
-    💬 WeChat ID: <b><span class="wx-copy" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span></b><br>
-    📞 Phone: <b><span style="white-space:nowrap">650-248-0529</span></b><br>
-    ▶️ YouTube: <b><a href="https://www.youtube.com/@RainFengShui" target="_blank" rel="noopener" style="color:var(--gold-lt)">RainFengShui</a></b><br>
-    📸 Instagram: <b><a href="https://www.instagram.com/rainfengshui" target="_blank" rel="noopener" style="color:var(--gold-lt)"><span style="white-space:nowrap">@RainFengShui</span></a></b><br>
-    📺 WeChat Channel: <b>润泽天星风水</b>
+  <div class="contact-line">
+<div class="crow"><span class="cemo">📧</span><span class="clabel-ew"></span><a class="cval-ul" href="javascript:openEmailModal()">RainFengShui@yahoo.com</a></div>
+<div class="crow"><span class="cemo">💬</span><span class="clabel-ew">WeChat ID:</span><span class="wx-copy cval" data-copy="FengShuiMaster_USA" onclick="copyWechat(this)">FengShuiMaster_USA</span></div>
+<div class="crow"><span class="cemo">📞</span><span class="clabel-ew">Phone:</span><a class="cval" href="tel:6502480529"><span style="white-space:nowrap">650-248-0529</span></a></div>
+<div class="crow"><span class="cemo">▶️</span><span class="clabel-ew">YouTube:</span><a class="cval" href="https://www.youtube.com/@RainFengShui" target="_blank" rel="noopener">RainFengShui</a></div>
+<div class="crow"><span class="cemo">📸</span><span class="clabel-ew">Instagram:</span><a class="cval" href="https://www.instagram.com/rainfengshui" target="_blank" rel="noopener"><span style="white-space:nowrap">@RainFengShui</span></a></div>
+<div class="crow"><span class="cemo">📺</span><span class="clabel-ew">WeChat Channel:</span><span class="cval">润泽天星风水</span></div>
   </div>
 </div>
 
 <footer>
-<div class="fnav"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-about.html">About</a><a href="en-pricing.html">Pricing</a><a href="en-contact.html">Contact</a></div>
+<div class="fnav"><a href="en-index.html">Home</a><a href="en-services.html">Services</a><a href="en-blog.html">Blog</a><a href="en-faq.html">FAQ</a><a href="en-about.html">About</a><a href="en-pricing.html">Pricing</a><a href="en-contact.html">Contact</a></div>
   <a href="en-index.html" style="text-decoration:none"><div class="fbrand">Rain Fengshui</div></a>
   <div>RAIN FENGSHUI · RESULTS GUARANTEED · FULL REFUND</div>
   <div style="margin-top:10px">© 2026 rainfengshui.com</div>
@@ -630,7 +642,7 @@ function copyWechat(el){var t=el.getAttribute('data-copy');function done(){var s
 .brand-logo{cursor:pointer}
 </style>
 <div class="logo-zoom-modal" id="logoZoomModal" onclick="this.classList.remove('active')">
-<img src="logo-v4.png" alt="润泽logo">
+<img src="logo-v4.png" alt="润泽天星风水logo">
 </div>
 <script>
 document.addEventListener("DOMContentLoaded",function(){
