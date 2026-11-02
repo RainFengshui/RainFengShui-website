@@ -210,6 +210,7 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
     <input type="text" id="mSubject" placeholder="Subject" class="modal-input">
     <textarea id="mBody" placeholder="What would you like to consult about..." class="modal-input" rows="5"></textarea>
     <button class="btn modal-send" onclick="sendEmail()">Send</button>
+    <p id="sendStatus" style="display:none;margin:8px 0 0;font-size:14px;line-height:1.6;color:#555"></p>
   </div>
 </div>
 
@@ -217,6 +218,7 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 function openEmailModal(){document.getElementById('emailModal').classList.add('open')}
 function closeEmailModal(){document.getElementById('emailModal').classList.remove('open')}
 document.getElementById('emailModal').addEventListener('click',function(e){if(e.target===this)closeEmailModal()});
+var sendTimer=null;
 function sendEmail(){
   var name=document.getElementById('mName').value.trim();
   var phone=document.getElementById('mPhone').value.trim();
@@ -224,7 +226,12 @@ function sendEmail(){
   var body=document.getElementById('mBody').value.trim();
   if(!name||!body){alert('Please fill in your name and message');return}
   var btn=document.querySelector('.modal-send');
-  btn.textContent='Sending...';btn.disabled=true;
+  btn.textContent='Sending, please wait…';btn.disabled=true;
+  var st=document.getElementById('sendStatus');
+  var t0=Date.now();
+  st.style.display='block';
+  st.textContent="Sending… this usually takes about a minute, please don't close this window. In a hurry? WeChat: FengShuiMaster_USA or call 650-248-0529.";
+  sendTimer=setInterval(function(){var s=Math.round((Date.now()-t0)/1000);st.textContent="Sending… waited "+s+" seconds so far, usually takes about a minute, please don't close this window.";},1000);
   fetch('https://formsubmit.co/ajax/RainFengShui@yahoo.com',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
@@ -245,7 +252,9 @@ function sendEmail(){
   }).catch(function(){
     alert('Failed. Please email RainFengShui@yahoo.com directly.');
   }).finally(function(){
-    btn.textContent='Send Email';btn.disabled=false;
+    clearInterval(sendTimer);
+    document.getElementById('sendStatus').style.display='none';
+    btn.textContent='Send';btn.disabled=false;
   });
 }
 </script>
