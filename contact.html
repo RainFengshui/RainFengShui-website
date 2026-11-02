@@ -240,19 +240,20 @@ function sendEmail(){
   var st=document.getElementById('sendStatus');
   var t0=Date.now();
   st.style.display='block';
-  st.textContent='正在发送，通常需要约1分钟，请不要关闭页面。着急可直接微信 FengShuiMaster_USA 或致电 650-248-0529。';
-  sendTimer=setInterval(function(){var s=Math.round((Date.now()-t0)/1000);st.textContent='正在发送，已等待 '+s+' 秒，通常需要约1分钟，请不要关闭页面。';},1000);
-  fetch('https://formsubmit.co/ajax/RainFengShui@yahoo.com',{
+  st.textContent='正在发送，请不要关闭页面。着急可直接微信 FengShuiMaster_USA 或致电 650-248-0529。';
+  sendTimer=setInterval(function(){var s=Math.round((Date.now()-t0)/1000);st.textContent='正在发送，已等待 '+s+' 秒，请不要关闭页面。';},1000);
+  fetch('https://api.web3forms.com/submit',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify({
+      access_key:'f81e3aea-fbf7-4a62-aae6-5051550dea9e',
+      from_name:name,
+      subject:'【网站咨询】'+subject+' - '+name,
       姓名:name,
       电话:phone||'未填写',
-      主题:'【网站咨询】'+subject,
-      咨询内容:body,
-      _subject:'【网站咨询】'+subject+' - '+name
+      咨询内容:body
     })
-  }).then(function(r){return r.json()}).then(function(){
+  }).then(function(r){return r.json().then(function(d){if(r.status===200){return d}throw new Error('failed')})}).then(function(){
     alert('发送成功！我们会尽快回复您。');
     closeEmailModal();
     document.getElementById('mName').value='';

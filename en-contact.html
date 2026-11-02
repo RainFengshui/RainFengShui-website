@@ -230,19 +230,20 @@ function sendEmail(){
   var st=document.getElementById('sendStatus');
   var t0=Date.now();
   st.style.display='block';
-  st.textContent="Sending… this usually takes about a minute, please don't close this window. In a hurry? WeChat: FengShuiMaster_USA or call 650-248-0529.";
-  sendTimer=setInterval(function(){var s=Math.round((Date.now()-t0)/1000);st.textContent="Sending… waited "+s+" seconds so far, usually takes about a minute, please don't close this window.";},1000);
-  fetch('https://formsubmit.co/ajax/RainFengShui@yahoo.com',{
+  st.textContent="Sending… please don't close this window. In a hurry? WeChat: FengShuiMaster_USA or call 650-248-0529.";
+  sendTimer=setInterval(function(){var s=Math.round((Date.now()-t0)/1000);st.textContent="Sending… waited "+s+" seconds so far, please don't close this window.";},1000);
+  fetch('https://api.web3forms.com/submit',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify({
+      access_key:'f81e3aea-fbf7-4a62-aae6-5051550dea9e',
+      from_name:name,
+      subject:'[Website] '+subject+' - '+name,
       Name:name,
       Phone:phone||'Not provided',
-      Subject:'[Website] '+subject,
-      Message:body,
-      _subject:'[Website] '+subject+' - '+name
+      Message:body
     })
-  }).then(function(r){return r.json()}).then(function(){
+  }).then(function(r){return r.json().then(function(d){if(r.status===200){return d}throw new Error('failed')})}).then(function(){
     alert('Sent! We will reply soon.');
     closeEmailModal();
     document.getElementById('mName').value='';
