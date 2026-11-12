@@ -80,17 +80,20 @@ nav{position:fixed}
   .nav-links.open{display:flex}
   .nav-links a{font-size:18px;letter-spacing:.35em;padding:12px;display:block}
 }
-/* ---------- 快速卖房 banner ---------- */
-.sellfast-banner{position:relative;z-index:5;margin-top:82px;background:linear-gradient(120deg,#141003 0%,#221a0a 45%,#141003 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 6vw}
-.sfb-inner{max-width:1150px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:30px;flex-wrap:wrap}
-.sfb-text{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;justify-content:center;text-align:center}
-.sfb-title{color:var(--gold-lt);font-size:18px;font-weight:700;letter-spacing:.28em}
-.sfb-desc{color:var(--muted);font-size:14px;letter-spacing:.12em}
-.sfb-btn{display:inline-block;padding:10px 32px;font-size:13px;letter-spacing:.3em;text-indent:.3em;text-decoration:none;border-radius:2px;font-weight:700;background:linear-gradient(160deg,var(--gold-lt),var(--gold) 60%,var(--gold-dk));color:#1a1405;font-family:'Noto Serif SC',serif;white-space:nowrap}
+/* ---------- 快速卖房浮动窗口 ---------- */
+.sellfast-banner{position:fixed;right:24px;bottom:24px;z-index:90;width:340px;max-width:calc(100vw - 48px);background:linear-gradient(135deg,#1c1503 0%,#2a2008 50%,#1c1503 100%);border:1px solid rgba(201,162,39,.55);border-radius:12px;padding:20px 22px 18px;box-shadow:0 12px 40px rgba(0,0,0,.6),0 0 0 1px rgba(201,162,39,.15);animation:sfb-in .5s ease .8s both}
+@keyframes sfb-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.sfb-close{position:absolute;top:6px;right:10px;font-size:22px;line-height:1;color:#8a8a8a;cursor:pointer;background:none;border:none;padding:4px;font-family:inherit}
+.sfb-close:hover{color:var(--gold-lt)}
+.sfb-inner{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.sfb-text{display:flex;flex-direction:column;gap:4px;text-align:left}
+.sfb-title{color:var(--gold-lt);font-size:17px;font-weight:700;letter-spacing:.2em}
+.sfb-desc{color:var(--muted);font-size:13px;letter-spacing:.08em;line-height:1.6}
+.sfb-btn{display:inline-block;padding:10px 28px;font-size:13px;letter-spacing:.3em;text-indent:.3em;text-decoration:none;border-radius:2px;font-weight:700;background:linear-gradient(160deg,var(--gold-lt),var(--gold) 60%,var(--gold-dk));color:#1a1405;font-family:'Noto Serif SC',serif;white-space:nowrap}
 .sfb-btn:hover{filter:brightness(1.12)}
 @media(max-width:760px){
-  .sellfast-banner{padding:14px 5vw}
-  .sfb-title{font-size:16px}
+  .sellfast-banner{right:12px;left:12px;bottom:12px;width:auto;max-width:none;padding:16px 18px 14px}
+  .sfb-title{font-size:15px}
   .sfb-desc{font-size:12px}
 }
 /* ---------- hero ---------- */
@@ -372,7 +375,8 @@ textarea.modal-input{resize:vertical}
   <div class="nav-links"><a href="index.html" class="cur">首页</a><a href="services.html">服务</a><a href="sell-fast.html">快速卖房</a><a href="blog.html">博客</a><a href="faq.html">问答</a><a href="about.html">关于</a><a href="pricing.html">收费</a><a href="contact.html">预约</a><a href="en-index.html" class="lang-sw">EN</a></div>
 </nav>
 
-<div class="sellfast-banner">
+<div class="sellfast-banner" id="sfb-float">
+  <button class="sfb-close" onclick="closeSfb()" aria-label="关闭">×</button>
   <div class="sfb-inner">
     <div class="sfb-text"><span class="sfb-title">奇门催售 · 快速卖房</span><span class="sfb-desc">房子久售不出？奇门布局催旺，快速成交</span></div>
     <a class="sfb-btn" href="sell-fast.html">了解详情 →</a>
@@ -398,15 +402,6 @@ textarea.modal-input{resize:vertical}
   </div>
   <div class="hero-scroll">向下探索 ↓</div>
 </header>
-
-<div class="rv" style="max-width:800px;margin:0 auto 40px;padding:0 20px">
-  <div style="background:linear-gradient(135deg,rgba(192,57,43,.15),rgba(192,57,43,.05));border:1px solid rgba(192,57,43,.4);border-radius:10px;padding:28px;text-align:center">
-    <div style="font-size:15px;color:var(--gold-lt);letter-spacing:.2em;margin-bottom:10px">🔥 限时福利</div>
-    <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:8px">每天前2名咨询者，免费八字简测一次</div>
-    <div style="font-size:14px;color:var(--muted);margin-bottom:16px">价值 $200 · 每日限量</div>
-    <a href="contact.html" class="btn">立即预约 →</a>
-  </div>
-</div>
 
 <section id="trust">
   <div class="sec-eyebrow rv">為何選擇潤澤</div>
@@ -659,29 +654,20 @@ function sendEmail(){
 <script>
 function copyWechat(el){var t=el.getAttribute('data-copy');function done(){var s=el.textContent;el.textContent=t+' ✓已复制';el.style.color='#e8c766';setTimeout(function(){el.textContent=s;el.style.color=''},1500)}if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done).catch(function(){fallback()})}else{fallback()}function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,99999);try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(ta)}}
 </script>
-<!-- 免费简测弹窗 -->
-<div id="promo-popup" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:9999;align-items:center;justify-content:center;padding:20px;box-sizing:border-box">
-  <div style="background:#141414;border:1px solid rgba(192,57,43,.5);border-radius:12px;padding:36px 28px;max-width:420px;width:100%;text-align:center;position:relative">
-    <span onclick="closePromo()" style="position:absolute;top:12px;right:16px;font-size:24px;color:#888;cursor:pointer">×</span>
-    <div style="font-size:14px;color:#e8c766;letter-spacing:.2em;margin-bottom:12px">🔥 限时福利</div>
-    <div style="font-size:24px;font-weight:700;color:#fff;margin-bottom:10px;line-height:1.4">每天前2名咨询者<br>免费八字简测一次</div>
-    <div style="font-size:13px;color:#999;margin-bottom:20px">价值 $200 · 每日限量 · 先到先得</div>
-    <a href="contact.html" class="btn" style="display:inline-block">立即预约 →</a>
-    <div onclick="closePromo()" style="margin-top:14px;font-size:13px;color:#666;cursor:pointer">暂不需要，关闭</div>
-  </div>
-</div>
 <script>
-(function(){
-  if(sessionStorage.getItem('promo_seen'))return;
-  setTimeout(function(){
-    var p=document.getElementById('promo-popup');
-    if(p){p.style.display='flex';}
-  },1500);
-})();
-function closePromo(){
-  document.getElementById('promo-popup').style.display='none';
-  sessionStorage.setItem('promo_seen','1');
+function closeSfb(){
+  var el=document.getElementById('sfb-float');
+  if(el){el.style.display='none';}
+  try{sessionStorage.setItem('sfb_closed','1');}catch(e){}
 }
+(function(){
+  try{
+    if(sessionStorage.getItem('sfb_closed')){
+      var el=document.getElementById('sfb-float');
+      if(el){el.style.display='none';}
+    }
+  }catch(e){}
+})();
 </script>
 
 <style>
