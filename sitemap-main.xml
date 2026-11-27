@@ -4,6 +4,12 @@
 <url><loc>https://rainfengshui.com/about.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 <url><loc>https://rainfengshui.com/services.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 <url><loc>https://rainfengshui.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://rainfengshui.com/consultation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://rainfengshui.com/consultation/online</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://rainfengshui.com/consultation/los-angeles</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://rainfengshui.com/consultation/san-francisco</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://rainfengshui.com/consultation/new-york</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://rainfengshui.com/consultation/orlando</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://rainfengshui.com/bazi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://rainfengshui.com/yangzhai.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://rainfengshui.com/yinzhai.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -26,8 +32,8 @@
 <url><loc>https://rainfengshui.com/en-daoyi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://rainfengshui.com/faq.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 <url><loc>https://rainfengshui.com/en-faq.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://rainfengshui-rain-feng-shui.vercel.app/pricing.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://rainfengshui-rain-feng-shui.vercel.app/en-pricing.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://rainfengshui.com/pricing.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://rainfengshui.com/en-pricing.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 <url><loc>https://rainfengshui.com/tianxing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://rainfengshui.com/newyork.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://rainfengshui.com/en-newyork.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
